@@ -1,0 +1,230 @@
+\begin{thebibliography}{28}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{\texttt{#1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+\providecommand{\eprint}[2][]{\url{#2}}
+\providecommand{\bibinfo}[2]{#2}
+\ifx\xfnm\relax \def\xfnm[#1]{\unskip,\space#1}\fi
+%Type = Inproceedings
+\bibitem[{Boureau et~al.(2010)Boureau, Ponce and
+  LeCun}]{boureau2010theoretical}
+\bibinfo{author}{Boureau, Y.L.}, \bibinfo{author}{Ponce, J.},
+  \bibinfo{author}{LeCun, Y.}, \bibinfo{year}{2010}.
+\newblock \bibinfo{title}{A theoretical analysis of feature pooling in visual
+  recognition}, in: \bibinfo{booktitle}{Proceedings of the 27th international
+  conference on machine learning (ICML-10)}, pp. \bibinfo{pages}{111--118}.
+%Type = Article
+\bibitem[{Burns and Iliffe()}]{Burns:2009}
+\bibinfo{author}{Burns, D.A.}, \bibinfo{author}{Iliffe, S.}, .
+\newblock \bibinfo{title}{Enfermedad de {A}lzheimer} , \bibinfo{pages}{338,
+  b158.}
+%Type = Inproceedings
+\bibitem[{Coates and Ng(2011)}]{coates2011importance}
+\bibinfo{author}{Coates, A.}, \bibinfo{author}{Ng, A.Y.}, \bibinfo{year}{2011}.
+\newblock \bibinfo{title}{The importance of encoding versus training with
+  sparse coding and vector quantization}, in: \bibinfo{booktitle}{Proceedings
+  of the 28th International Conference on Machine Learning (ICML-11)}, pp.
+  \bibinfo{pages}{921--928}.
+%Type = Article
+\bibitem[{Fawcett(2004)}]{fawcett2004roc}
+\bibinfo{author}{Fawcett, T.}, \bibinfo{year}{2004}.
+\newblock \bibinfo{title}{Roc graphs: Notes and practical considerations for
+  researchers}.
+\newblock \bibinfo{journal}{Machine learning} \bibinfo{volume}{31},
+  \bibinfo{pages}{1--38}.
+%Type = Inproceedings
+\bibitem[{Freund et~al.(1996)Freund, Schapire et~al.}]{freund1996experiments}
+\bibinfo{author}{Freund, Y.}, \bibinfo{author}{Schapire, R.E.}, et~al.,
+  \bibinfo{year}{1996}.
+\newblock \bibinfo{title}{Experiments with a new boosting algorithm}, in:
+  \bibinfo{booktitle}{icml}, pp. \bibinfo{pages}{148--156}.
+%Type = Book
+\bibitem[{Friedman et~al.(2001)Friedman, Hastie and
+  Tibshirani}]{friedman2001elements}
+\bibinfo{author}{Friedman, J.}, \bibinfo{author}{Hastie, T.},
+  \bibinfo{author}{Tibshirani, R.}, \bibinfo{year}{2001}.
+\newblock \bibinfo{title}{The elements of statistical learning}.
+  volume~\bibinfo{volume}{1}.
+\newblock \bibinfo{publisher}{Springer series in statistics Springer, Berlin}.
+%Type = Article
+\bibitem[{Genin et~al.(2011)Genin, Hannequin, Wallon, Sleegers, Hiltunen,
+  Combarros, Bullido, Engelborghs, De~Deyn, Berr et~al.}]{genin2011apoe}
+\bibinfo{author}{Genin, E.}, \bibinfo{author}{Hannequin, D.},
+  \bibinfo{author}{Wallon, D.}, \bibinfo{author}{Sleegers, K.},
+  \bibinfo{author}{Hiltunen, M.}, \bibinfo{author}{Combarros, O.},
+  \bibinfo{author}{Bullido, M.J.}, \bibinfo{author}{Engelborghs, S.},
+  \bibinfo{author}{De~Deyn, P.}, \bibinfo{author}{Berr, C.}, et~al.,
+  \bibinfo{year}{2011}.
+\newblock \bibinfo{title}{Apoe and alzheimer disease: a major gene with
+  semi-dominant inheritance}.
+\newblock \bibinfo{journal}{Molecular psychiatry} \bibinfo{volume}{16},
+  \bibinfo{pages}{903--907}.
+%Type = Article
+\bibitem[{Ghebranious et~al.(2005)Ghebranious, Ivacic, Mallum and
+  Dokken}]{ghebranious2005detection}
+\bibinfo{author}{Ghebranious, N.}, \bibinfo{author}{Ivacic, L.},
+  \bibinfo{author}{Mallum, J.}, \bibinfo{author}{Dokken, C.},
+  \bibinfo{year}{2005}.
+\newblock \bibinfo{title}{Detection of apoe e2, e3 and e4 alleles using
+  maldi-tof mass spectrometry and the homogeneous mass-extend technology}.
+\newblock \bibinfo{journal}{Nucleic acids research} \bibinfo{volume}{33},
+  \bibinfo{pages}{e149--e149}.
+%Type = Book
+\bibitem[{Guyon et~al.(2008)Guyon, Gunn, Nikravesh and
+  Zadeh}]{guyon2008feature}
+\bibinfo{author}{Guyon, I.}, \bibinfo{author}{Gunn, S.},
+  \bibinfo{author}{Nikravesh, M.}, \bibinfo{author}{Zadeh, L.A.},
+  \bibinfo{year}{2008}.
+\newblock \bibinfo{title}{Feature extraction: foundations and applications}.
+  volume \bibinfo{volume}{207}.
+\newblock \bibinfo{publisher}{Springer}.
+%Type = Article
+\bibitem[{Jain and Zongker(1997)}]{jain1997feature}
+\bibinfo{author}{Jain, A.}, \bibinfo{author}{Zongker, D.},
+  \bibinfo{year}{1997}.
+\newblock \bibinfo{title}{Feature selection: Evaluation, application, and small
+  sample performance}.
+\newblock \bibinfo{journal}{IEEE transactions on pattern analysis and machine
+  intelligence} \bibinfo{volume}{19}, \bibinfo{pages}{153--158}.
+%Type = Book
+\bibitem[{Jolliffe(2002)}]{jolliffe2002principal}
+\bibinfo{author}{Jolliffe, I.}, \bibinfo{year}{2002}.
+\newblock \bibinfo{title}{Principal component analysis}.
+\newblock \bibinfo{publisher}{Wiley Online Library}.
+%Type = Article
+\bibitem[{Lin et~al.(2014)Lin, Li, Sun, Lai, Davidson, Fan and
+  Ye}]{lin2014stochastic}
+\bibinfo{author}{Lin, B.}, \bibinfo{author}{Li, Q.}, \bibinfo{author}{Sun, Q.},
+  \bibinfo{author}{Lai, M.J.}, \bibinfo{author}{Davidson, I.},
+  \bibinfo{author}{Fan, W.}, \bibinfo{author}{Ye, J.}, \bibinfo{year}{2014}.
+\newblock \bibinfo{title}{Stochastic coordinate coding and its application for
+  drosophila gene expression pattern annotation}.
+\newblock \bibinfo{journal}{arXiv preprint arXiv:1407.8147} .
+%Type = Book
+\bibitem[{Liu and Motoda(2007)}]{liu2007computational}
+\bibinfo{author}{Liu, H.}, \bibinfo{author}{Motoda, H.}, \bibinfo{year}{2007}.
+\newblock \bibinfo{title}{Computational methods of feature selection}.
+\newblock \bibinfo{publisher}{CRC Press}.
+%Type = Inproceedings
+\bibitem[{Lv et~al.(2015)Lv, Lin, Zhang, Jiang, Hu, Han, Guo, Ye and
+  Liu}]{lv2015modeling}
+\bibinfo{author}{Lv, J.}, \bibinfo{author}{Lin, B.}, \bibinfo{author}{Zhang,
+  W.}, \bibinfo{author}{Jiang, X.}, \bibinfo{author}{Hu, X.},
+  \bibinfo{author}{Han, J.}, \bibinfo{author}{Guo, L.}, \bibinfo{author}{Ye,
+  J.}, \bibinfo{author}{Liu, T.}, \bibinfo{year}{2015}.
+\newblock \bibinfo{title}{Modeling task fmri data via supervised stochastic
+  coordinate coding}, in: \bibinfo{booktitle}{International Conference on
+  Medical Image Computing and Computer-Assisted Intervention},
+  \bibinfo{organization}{Springer}. pp. \bibinfo{pages}{239--246}.
+%Type = Inproceedings
+\bibitem[{Mairal et~al.(2009)Mairal, Bach, Ponce and Sapiro}]{mairal2009online}
+\bibinfo{author}{Mairal, J.}, \bibinfo{author}{Bach, F.},
+  \bibinfo{author}{Ponce, J.}, \bibinfo{author}{Sapiro, G.},
+  \bibinfo{year}{2009}.
+\newblock \bibinfo{title}{Online dictionary learning for sparse coding}, in:
+  \bibinfo{booktitle}{Proceedings of the 26th annual international conference
+  on machine learning}, \bibinfo{organization}{ACM}. pp.
+  \bibinfo{pages}{689--696}.
+%Type = Inproceedings
+\bibitem[{Masaeli et~al.(2010)Masaeli, Dy and Fung}]{masaeli2010transformation}
+\bibinfo{author}{Masaeli, M.}, \bibinfo{author}{Dy, J.G.},
+  \bibinfo{author}{Fung, G.M.}, \bibinfo{year}{2010}.
+\newblock \bibinfo{title}{From transformation-based dimensionality reduction to
+  feature selection}, in: \bibinfo{booktitle}{Proceedings of the 27th
+  International Conference on Machine Learning (ICML-10)}, pp.
+  \bibinfo{pages}{751--758}.
+%Type = Inproceedings
+\bibitem[{Mika et~al.(1999)Mika, Ratsch, Weston, Scholkopf and
+  Mullers}]{mika1999fisher}
+\bibinfo{author}{Mika, S.}, \bibinfo{author}{Ratsch, G.},
+  \bibinfo{author}{Weston, J.}, \bibinfo{author}{Scholkopf, B.},
+  \bibinfo{author}{Mullers, K.R.}, \bibinfo{year}{1999}.
+\newblock \bibinfo{title}{Fisher discriminant analysis with kernels}, in:
+  \bibinfo{booktitle}{Neural Networks for Signal Processing IX, 1999.
+  Proceedings of the 1999 IEEE Signal Processing Society Workshop.},
+  \bibinfo{organization}{IEEE}. pp. \bibinfo{pages}{41--48}.
+%Type = Inproceedings
+\bibitem[{Mika et~al.(1998)Mika, Sch{\"o}lkopf, Smola, M{\"u}ller, Scholz and
+  R{\"a}tsch}]{mika1998kernel}
+\bibinfo{author}{Mika, S.}, \bibinfo{author}{Sch{\"o}lkopf, B.},
+  \bibinfo{author}{Smola, A.J.}, \bibinfo{author}{M{\"u}ller, K.R.},
+  \bibinfo{author}{Scholz, M.}, \bibinfo{author}{R{\"a}tsch, G.},
+  \bibinfo{year}{1998}.
+\newblock \bibinfo{title}{Kernel pca and de-noising in feature spaces.}, in:
+  \bibinfo{booktitle}{NIPS}, pp. \bibinfo{pages}{536--542}.
+%Type = Book
+\bibitem[{Penny et~al.(2011)Penny, Friston, Ashburner, Kiebel and
+  Nichols}]{penny2011statistical}
+\bibinfo{author}{Penny, W.D.}, \bibinfo{author}{Friston, K.J.},
+  \bibinfo{author}{Ashburner, J.T.}, \bibinfo{author}{Kiebel, S.J.},
+  \bibinfo{author}{Nichols, T.E.}, \bibinfo{year}{2011}.
+\newblock \bibinfo{title}{Statistical parametric mapping: the analysis of
+  functional brain images}.
+\newblock \bibinfo{publisher}{Academic press}.
+%Type = Article
+\bibitem[{Powers(2011)}]{powers2011evaluation}
+\bibinfo{author}{Powers, D.M.}, \bibinfo{year}{2011}.
+\newblock \bibinfo{title}{Evaluation: from precision, recall and f-measure to
+  roc, informedness, markedness and correlation} .
+%Type = Article
+\bibitem[{Rasmussen(2006)}]{rasmussen2006gaussian}
+\bibinfo{author}{Rasmussen, C.E.}, \bibinfo{year}{2006}.
+\newblock \bibinfo{title}{Gaussian processes for machine learning} .
+%Type = Article
+\bibitem[{Rojas(2009)}]{rojas2009adaboost}
+\bibinfo{author}{Rojas, R.}, \bibinfo{year}{2009}.
+\newblock \bibinfo{title}{Adaboost and the super bowl of classifiers a tutorial
+  introduction to adaptive boosting}.
+\newblock \bibinfo{journal}{Freie University, Berlin, Tech. Rep} .
+%Type = Incollection
+\bibitem[{Schapire(2013)}]{schapire2013explaining}
+\bibinfo{author}{Schapire, R.E.}, \bibinfo{year}{2013}.
+\newblock \bibinfo{title}{Explaining adaboost}, in:
+  \bibinfo{booktitle}{Empirical inference}. \bibinfo{publisher}{Springer}, pp.
+  \bibinfo{pages}{37--52}.
+%Type = Inproceedings
+\bibitem[{Scherer et~al.(2010)Scherer, M{\"u}ller and
+  Behnke}]{scherer2010evaluation}
+\bibinfo{author}{Scherer, D.}, \bibinfo{author}{M{\"u}ller, A.},
+  \bibinfo{author}{Behnke, S.}, \bibinfo{year}{2010}.
+\newblock \bibinfo{title}{Evaluation of pooling operations in convolutional
+  architectures for object recognition}, in: \bibinfo{booktitle}{International
+  Conference on Artificial Neural Networks}, \bibinfo{organization}{Springer}.
+  pp. \bibinfo{pages}{92--101}.
+%Type = Inproceedings
+\bibitem[{Schnass and Vandergheynst(2008)}]{schnass2008dictionary}
+\bibinfo{author}{Schnass, K.}, \bibinfo{author}{Vandergheynst, P.},
+  \bibinfo{year}{2008}.
+\newblock \bibinfo{title}{Dictionary learning based dimensionality reduction
+  for classification}, in: \bibinfo{booktitle}{Communications, Control and
+  Signal Processing, 2008. ISCCSP 2008. 3rd International Symposium on},
+  \bibinfo{organization}{IEEE}. pp. \bibinfo{pages}{780--785}.
+%Type = Book
+\bibitem[{Shawe-Taylor and Cristianini(2004)}]{shawe2004kernel}
+\bibinfo{author}{Shawe-Taylor, J.}, \bibinfo{author}{Cristianini, N.},
+  \bibinfo{year}{2004}.
+\newblock \bibinfo{title}{Kernel methods for pattern analysis}.
+\newblock \bibinfo{publisher}{Cambridge university press}.
+%Type = Article
+\bibitem[{Tang et~al.(2014)Tang, Alelyani and Liu}]{tang2014feature}
+\bibinfo{author}{Tang, J.}, \bibinfo{author}{Alelyani, S.},
+  \bibinfo{author}{Liu, H.}, \bibinfo{year}{2014}.
+\newblock \bibinfo{title}{Feature selection for classification: A review}.
+\newblock \bibinfo{journal}{Data Classification: Algorithms and Applications} ,
+  \bibinfo{pages}{37}.
+%Type = Article
+\bibitem[{Weiner et~al.(2013)Weiner, Veitch, Aisen, Beckett, Cairns, Green,
+  Harvey, Jack, Jagust, Liu et~al.}]{weiner2013alzheimer}
+\bibinfo{author}{Weiner, M.W.}, \bibinfo{author}{Veitch, D.P.},
+  \bibinfo{author}{Aisen, P.S.}, \bibinfo{author}{Beckett, L.A.},
+  \bibinfo{author}{Cairns, N.J.}, \bibinfo{author}{Green, R.C.},
+  \bibinfo{author}{Harvey, D.}, \bibinfo{author}{Jack, C.R.},
+  \bibinfo{author}{Jagust, W.}, \bibinfo{author}{Liu, E.}, et~al.,
+  \bibinfo{year}{2013}.
+\newblock \bibinfo{title}{The alzheimer's disease neuroimaging initiative: a
+  review of papers published since its inception}.
+\newblock \bibinfo{journal}{Alzheimer's \& Dementia} \bibinfo{volume}{9},
+  \bibinfo{pages}{e111--e194}.
+
+\end{thebibliography}
