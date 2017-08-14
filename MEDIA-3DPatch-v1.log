@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.1.15)  1 AUG 2017 20:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.1.15)  14 AUG 2017 15:09
 entering extended mode
-**./MEDIA-D-16-00187-MinRev_v5.tex
-(MEDIA-D-16-00187-MinRev_v5.tex
+**./MEDIA-3DPatch-v1.tex
+(MEDIA-3DPatch-v1.tex
 LaTeX2e <2016/03/31> patch level 3
 Babel <3.9r> and hyphenation patterns for 75 language(s) loaded.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\elsarticle\elsarticle.cls"
@@ -85,9 +85,8 @@ File: upsy.fd 2001/06/04 font definitions for U/psy.
 \@enLab=\toks16
 \@sep=\skip43
 \@@sep=\skip44
-
-(MEDIA-D-16-00187-MinRev_v5.spl)
-("C:\Program Files\MiKTeX 2.9\tex\latex\natbib\natbib.sty"
+ (MEDIA-3DPatch-v1.spl) ("C:\Program Files\MiKTeX 2.9\tex\latex\natbib\natbib.s
+ty"
 Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip45
 \bibsep=\skip46
@@ -95,7 +94,7 @@ LaTeX Info: Redefining \cite on input line 694.
 \c@NAT@ctr=\count94
 )
 \splwrite=\write3
-\openout3 = `MEDIA-D-16-00187-MinRev_v5.spl'.
+\openout3 = `MEDIA-3DPatch-v1.spl'.
 
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.sty"
@@ -572,8 +571,8 @@ Package: multirow 2016/11/25 v2.2 Span multiple rows of a table
 \c@proposition=\count174
 \c@theorem=\count175
 
-(MEDIA-D-16-00187-MinRev_v5.aux)
-\openout1 = `MEDIA-D-16-00187-MinRev_v5.aux'.
+(MEDIA-3DPatch-v1.aux)
+\openout1 = `MEDIA-3DPatch-v1.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 60.
 LaTeX Font Info:    ... okay on input line 60.
@@ -710,79 +709,29 @@ Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ô in font cmr12!
 
-
-LaTeX Warning: Reference `fig:participant_stages' on page 2 undefined on input 
-line 124.
-
-[2]
-
-Package natbib Warning: Citation `langbaum2013ushering' on page 3 undefined on 
-input line 127.
-
-
-Package natbib Warning: Citation `kakimoto2011new' on page 3 undefined on input
- line 129.
-
-
-Package natbib Warning: Citation `lu2017early' on page 3 undefined on input lin
-e 129.
-
-[3]
+[2] [3]
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ú in font cmr12!
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ù in font cmr12!
-
-
-Package natbib Warning: Citation `yin2008bregman' on page 4 undefined on input 
-line 133.
-
-
-Package natbib Warning: Citation `yin2008bregman' on page 4 undefined on input 
-line 133.
-
-
-Package natbib Warning: Citation `lv2015holistic' on page 4 undefined on input 
-line 133.
-
-
-Package natbib Warning: Citation `moody2012unsupervised' on page 4 undefined on
- input line 133.
-
-[4] [5] <figures/pet_raw.png, id=29, 1909.88531pt x 373.395pt>
+ [4] [5] <figures/pet_raw.png, id=29, 1909.88531pt x 373.395pt>
 File: figures/pet_raw.png Graphic file (type png)
 
 <use figures/pet_raw.png>
-Package pdftex.def Info: figures/pet_raw.png used on input line 139.
+Package pdftex.def Info: figures/pet_raw.png used on input line 140.
 (pdftex.def)             Requested size: 469.75502pt x 91.83867pt.
 
 
-Package natbib Warning: Citation `zhang2016applying' on page 6 undefined on inp
-ut line 150.
-
-
-Package natbib Warning: Citation `kakimoto2011new' on page 6 undefined on input
- line 153.
-
-
-Package natbib Warning: Citation `lu2017early' on page 6 undefined on input lin
-e 153.
-
-
-LaTeX Warning: Reference `fig:mask' on page 6 undefined on input line 153.
+LaTeX Warning: Reference `fig:mask' on page 6 undefined on input line 154.
 
 [6 <./figures/pet_raw.png>]
-
-Package natbib Warning: Citation `tipping1999mixtures' on page 7 undefined on i
-nput line 160.
-
 <figures/maxpooling2.png, id=35, 595.47469pt x 187.45032pt>
 File: figures/maxpooling2.png Graphic file (type png)
 
 <use figures/maxpooling2.png>
-Package pdftex.def Info: figures/maxpooling2.png used on input line 167.
+Package pdftex.def Info: figures/maxpooling2.png used on input line 168.
 (pdftex.def)             Requested size: 469.75502pt x 147.8753pt.
 Missing character: There is no √ in font cmr10!
 Missing character: There is no ó in font cmr10!
@@ -809,10 +758,10 @@ Missing character: There is no ó in font cmr10!
 File: figures/adaboost.png Graphic file (type png)
 
 <use figures/adaboost.png>
-Package pdftex.def Info: figures/adaboost.png used on input line 182.
+Package pdftex.def Info: figures/adaboost.png used on input line 183.
 (pdftex.def)             Requested size: 469.75502pt x 347.74922pt.
 
-Overfull \hbox (4.94005pt too wide) in paragraph at lines 191--192
+Overfull \hbox (4.94005pt too wide) in paragraph at lines 192--193
 []\OT1/cmr/m/n/12 This sec-tion in-tro-duces the com-pu-ta-tional al-go-rithms 
 of the pro-posed clas-si-fi-ca-tion method
  []
@@ -824,196 +773,167 @@ Missing character: There is no ò in font cmr12!
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ô in font cmr12!
- [11]
-<figures/patches.png, id=60, 878.53218pt x 247.67531pt>
+
+<figures/patches.png, id=56, 878.53218pt x 247.67531pt>
 File: figures/patches.png Graphic file (type png)
 
 <use figures/patches.png>
-Package pdftex.def Info: figures/patches.png used on input line 211.
+Package pdftex.def Info: figures/patches.png used on input line 204.
 (pdftex.def)             Requested size: 469.75502pt x 132.43506pt.
- [12]
-
-Package natbib Warning: Citation `tipping1999mixtures' on page 13 undefined on 
-input line 228.
-
-[13 <./figures/patches.png>]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 234.
+ [11] [12 <./figures/patches.png>] [13]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 233.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 234.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 233.
  [14]
 LaTeX Font Info:    Font shape `OMS/cmr/m/it' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 279.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 278.
 
 <figures/pipeline2.png, id=72, 797.22844pt x 490.08093pt>
 File: figures/pipeline2.png Graphic file (type png)
 
 <use figures/pipeline2.png>
-Package pdftex.def Info: figures/pipeline2.png used on input line 283.
+Package pdftex.def Info: figures/pipeline2.png used on input line 282.
 (pdftex.def)             Requested size: 469.75502pt x 288.77135pt.
  [15] [16 <./figures/pipeline2.png>]
-<figures/iteration.png, id=81, 645.91313pt x 423.83344pt>
-File: figures/iteration.png Graphic file (type png)
-
-<use figures/iteration.png>
-Package pdftex.def Info: figures/iteration.png used on input line 297.
-(pdftex.def)             Requested size: 469.75502pt x 308.24466pt.
- [17 <./figures/iteration.png>]
-
-LaTeX Warning: Reference `fig:pipeline1' on page 18 undefined on input line 343
-.
-
-
-LaTeX Warning: Reference `fig:pipelinecompare' on page 18 undefined on input li
-ne 343.
-
-
-Overfull \hbox (7.61078pt too wide) in paragraph at lines 359--359
+Overfull \hbox (7.61078pt too wide) in paragraph at lines 301--301
  []|\OT1/cmr/m/n/12 Female| 
  []
 
 
-Overfull \hbox (4.24478pt too wide) in paragraph at lines 359--359
+Overfull \hbox (4.24478pt too wide) in paragraph at lines 301--301
  []|\OT1/cmr/m/n/12 APOE1| 
  []
 
 
-Overfull \hbox (4.24478pt too wide) in paragraph at lines 359--359
+Overfull \hbox (4.24478pt too wide) in paragraph at lines 301--301
  []|\OT1/cmr/m/n/12 APOE2| 
  []
 
-[18] [19]
+[17]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 377.
+               Default added (so using `tbp') on input line 319.
 
-[20] [21]
+[18] [19]
 
-Package natbib Warning: Citation `swets1979roc' on page 22 undefined on input l
-ine 427.
+Package natbib Warning: Citation `swets1979roc' on page 20 undefined on input l
+ine 369.
 
 
-LaTeX Warning: Reference `sec:pipline' on page 22 undefined on input line 440.
+LaTeX Warning: Reference `sec:pipline' on page 20 undefined on input line 382.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[22]
+[20]
 
-LaTeX Warning: Reference `subjects' on page 23 undefined on input line 466.
+LaTeX Warning: Reference `subjects' on page 21 undefined on input line 408.
 
-[23]
+[21]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 468.
+               Default added (so using `tbp') on input line 410.
 
-[24] [25]
-Overfull \hbox (4.12831pt too wide) in paragraph at lines 510--511
+[22] [23]
+Overfull \hbox (4.12831pt too wide) in paragraph at lines 452--453
  []|[]| 
  []
 
 
-Overfull \hbox (3.595pt too wide) in paragraph at lines 524--525
+Overfull \hbox (3.595pt too wide) in paragraph at lines 466--467
  []|[]| 
  []
 
-
-Package natbib Warning: Citation `olshausen1996emergence' on page 26 undefined 
-on input line 545.
-
-[26
+[24
 
 ]
 
-LaTeX Warning: Reference `alg:piplinecompare' on page 27 undefined on input lin
-e 579.
+LaTeX Warning: Reference `alg:piplinecompare' on page 25 undefined on input lin
+e 521.
 
-[27] [28] <figures/auc.png, id=124, 377.15906pt x 575.14874pt>
+[25] [26] <figures/auc.png, id=114, 377.15906pt x 575.14874pt>
 File: figures/auc.png Graphic file (type png)
 
 <use figures/auc.png>
-Package pdftex.def Info: figures/auc.png used on input line 585.
+Package pdftex.def Info: figures/auc.png used on input line 527.
 (pdftex.def)             Requested size: 422.77664pt x 644.71509pt.
 
 
-LaTeX Warning: Float too large for page by 22.28508pt on input line 588.
+LaTeX Warning: Float too large for page by 22.28508pt on input line 530.
 
 
-Package natbib Warning: Citation `zhang2016applyiong' on page 29 undefined on i
-nput line 593.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Package natbib Warning: Citation `zhang2016hyperbolic' on page 29 undefined on 
-input line 593.
+Package natbib Warning: Citation `zhang2016applyiong' on page 27 undefined on i
+nput line 535.
 
 
-Package natbib Warning: Citation `?.?' on page 29 undefined on input line 593.
+Package natbib Warning: Citation `zhang2016hyperbolic' on page 27 undefined on 
+input line 535.
 
 
-Package natbib Warning: Citation `gregor2010learning' on page 29 undefined on i
-nput line 593.
+Package natbib Warning: Citation `?.?' on page 27 undefined on input line 535.
 
 
-Package natbib Warning: Citation `vincent2010stacked' on page 29 undefined on i
-nput line 593.
+Package natbib Warning: Citation `gregor2010learning' on page 27 undefined on i
+nput line 535.
 
 
-Package natbib Warning: Citation `baldi2012autoencoders' on page 29 undefined o
-n input line 593.
-
-[29
-
-] [30 <./figures/auc.png>]
-
-Package natbib Warning: Citation `ishii2014pet' on page 31 undefined on input l
-ine 598.
+Package natbib Warning: Citation `vincent2010stacked' on page 27 undefined on i
+nput line 535.
 
 
-Package natbib Warning: Citation `herholz2002discrimination' on page 31 undefin
-ed on input line 598.
+Package natbib Warning: Citation `baldi2012autoencoders' on page 27 undefined o
+n input line 535.
+
+[27
+
+]
+
+Package natbib Warning: Citation `ishii2014pet' on page 28 undefined on input l
+ine 540.
 
 
-Package natbib Warning: Citation `illan201118' on page 31 undefined on input li
-ne 598.
+Package natbib Warning: Citation `zhang2016hyperbolic' on page 28 undefined on 
+input line 540.
 
 
-Package natbib Warning: Citation `higdon2004comparison' on page 31 undefined on
- input line 598.
+Package natbib Warning: Citation `coupe2011patch' on page 28 undefined on input
+ line 540.
+
+[28] <figures/iteration.png, id=121, 645.91313pt x 423.83344pt>
+File: figures/iteration.png Graphic file (type png)
+
+<use figures/iteration.png>
+Package pdftex.def Info: figures/iteration.png used on input line 550.
+(pdftex.def)             Requested size: 469.75502pt x 308.24466pt.
 
 
-Package natbib Warning: Citation `kakimoto2011new' on page 31 undefined on inpu
-t line 598.
+LaTeX Warning: Reference `fig:pipeline1' on page 29 undefined on input line 596
+.
 
 
-Package natbib Warning: Citation `lu2017early' on page 31 undefined on input li
-ne 598.
+LaTeX Warning: Reference `fig:pipelinecompare' on page 29 undefined on input li
+ne 596.
 
-
-Package natbib Warning: Citation `zhang2016hyperbolic' on page 31 undefined on 
-input line 598.
-
-
-Package natbib Warning: Citation `zhang2016applying' on page 31 undefined on in
-put line 598.
-
-
-Package natbib Warning: Citation `coupe2011patch' on page 31 undefined on input
- line 598.
-
-[31] [32] [33] [34] (MEDIA-D-16-00187-MinRev_v5.bbl [35] [36])
+[29] [30] [31] [32] [33] (MEDIA-3DPatch-v1.bbl
+Missing character: There is no ‚ in font cmr12!
+Missing character: There is no Ä in font cmr12!
+Missing character: There is no ô in font cmr12!
+ [34] [35] [36])
 
 Package natbib Warning: There were undefined citations.
 
-[37] (MEDIA-D-16-00187-MinRev_v5.aux)
+[37] [38 <./figures/auc.png>] [39 <./figures/iteration.png>]
+(MEDIA-3DPatch-v1.aux)
 
 LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  )
 (\end occurred inside a group at level 1)
@@ -1021,13 +941,13 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 9440 strings out of 493333
- 130838 string characters out of 3139194
- 379255 words of memory out of 3000000
- 12726 multiletter control sequences out of 15000+200000
+ 9444 strings out of 493333
+ 130794 string characters out of 3139194
+ 379930 words of memory out of 3000000
+ 12730 multiletter control sequences out of 15000+200000
  16612 words of font info for 69 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 40i,18n,39p,3292b,2930s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 40i,18n,39p,3282b,2932s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmb
 x10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Progr
@@ -1048,9 +968,9 @@ fonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
 cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.p
 fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti7.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on MEDIA-D-16-00187-MinRev_v5.pdf (37 pages, 1367648 bytes).
+Output written on MEDIA-3DPatch-v1.pdf (39 pages, 1362596 bytes).
 PDF statistics:
- 226 PDF objects out of 1000 (max. 8388607)
+ 232 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  36 words of extra memory for PDF output out of 10000 (max. 10000000)
 

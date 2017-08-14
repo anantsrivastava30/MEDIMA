@@ -1,19 +1,22 @@
-This is BibTeX, Version 0.99dThe top-level auxiliary file: MEDIA-D-16-00187-MinRev_v5.aux
+This is BibTeX, Version 0.99dThe top-level auxiliary file: MEDIA-3DPatch-v1.aux
 The style file: model2-names.bst
 Database file #1: confinv.bib
 Repeated entry---line 242 of file confinv.bib
  : @book{jolliffe2002principal
  :                            ,
 I'm skipping whatever remains of this entry
-Warning--I didn't find a database entry for "langbaum2013ushering"
-Warning--I didn't find a database entry for "kakimoto2011new"
-Warning--I didn't find a database entry for "lu2017early"
-Warning--I didn't find a database entry for "yin2008bregman"
-Warning--I didn't find a database entry for "lv2015holistic"
-Warning--I didn't find a database entry for "moody2012unsupervised"
-Warning--I didn't find a database entry for "tipping1999mixtures"
-Warning--I didn't find a database entry for "Carmo1976Book"
-Warning--empty journal in Burns:2009
-Warning--empty journal in powers2011evaluation
-Warning--empty journal in rasmussen2006gaussian
-(There was 1 error message)
+Repeated entry---line 377 of file confinv.bib
+ : @article{yin2008bregman
+ :                        ,
+I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "swets1979roc"
+Warning--I didn't find a database entry for "zhang2016applyiong"
+Warning--I didn't find a database entry for "zhang2016hyperbolic"
+Warning--I didn't find a database entry for "?.?"
+Warning--I didn't find a database entry for "gregor2010learning"
+Warning--I didn't find a database entry for "vincent2010stacked"
+Warning--I didn't find a database entry for "baldi2012autoencoders"
+Warning--I didn't find a database entry for "ishii2014pet"
+Warning--I didn't find a database entry for "coupe2011patch"
+Warning--empty journal in Burns2009
+(There were 2 error messages)
