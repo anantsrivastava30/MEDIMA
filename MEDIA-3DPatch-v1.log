@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.1.15)  14 AUG 2017 17:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.1.15)  15 AUG 2017 13:22
 entering extended mode
 **./MEDIA-3DPatch-v1.tex
 (MEDIA-3DPatch-v1.tex
@@ -835,44 +835,50 @@ Overfull \hbox (3.595pt too wide) in paragraph at lines 462--463
 
 [23
 
-] [24] [25] <figures/auc.png, id=111, 377.15906pt x 575.14874pt>
-File: figures/auc.png Graphic file (type png)
+]
 
-<use figures/auc.png>
-Package pdftex.def Info: figures/auc.png used on input line 523.
-(pdftex.def)             Requested size: 422.77664pt x 644.71509pt.
+LaTeX Warning: Reference `fig:auc' on page 24 undefined on input line 517.
 
+[24] <figures/auc1.png, id=107, 611.886pt x 259.2084pt>
+File: figures/auc1.png Graphic file (type png)
+ <use figures/auc1.png>
+Package pdftex.def Info: figures/auc1.png used on input line 523.
+(pdftex.def)             Requested size: 469.75502pt x 198.99779pt.
 
-LaTeX Warning: Float too large for page by 21.08507pt on input line 526.
+<figures/auc2.png, id=108, 611.886pt x 259.2084pt>
+File: figures/auc2.png Graphic file (type png)
+ <use figures/auc2.png>
+Package pdftex.def Info: figures/auc2.png used on input line 530.
+(pdftex.def)             Requested size: 469.75502pt x 198.99779pt.
 
+<figures/auc3.png, id=109, 611.886pt x 259.2084pt>
+File: figures/auc3.png Graphic file (type png)
+ <use figures/auc3.png>
+Package pdftex.def Info: figures/auc3.png used on input line 537.
+(pdftex.def)             Requested size: 469.75502pt x 198.99779pt.
 
-Package natbib Warning: Citation `?.?' on page 26 undefined on input line 529.
-
-[26
-
-] [27 <./figures/auc.png>] [28] [29]
-<figures/iteration.png, id=125, 645.91313pt x 423.83344pt>
+[25 <./figures/auc1.png>] [26 <./figures/auc2.png>] [27 <./figures/auc3.png>]
+[28] [29] [30] <figures/iteration.png, id=130, 645.91313pt x 423.83344pt>
 File: figures/iteration.png Graphic file (type png)
 
 <use figures/iteration.png>
-Package pdftex.def Info: figures/iteration.png used on input line 547.
+Package pdftex.def Info: figures/iteration.png used on input line 561.
 (pdftex.def)             Requested size: 281.85587pt x 184.94809pt.
- [30 <./figures/iteration.png>] [31] [32] [33]
-(MEDIA-3DPatch-v1.bbl [34]
+ [31 <./figures/iteration.png>] [32] [33] [34]
+(MEDIA-3DPatch-v1.bbl [35]
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no ™ in font cmr12!
- [35] [36]
+ [36] [37]
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no ™ in font cmr12!
- [37])
-
-Package natbib Warning: There were undefined citations.
-
-[38] (MEDIA-3DPatch-v1.aux)
+ [38]) [39] (MEDIA-3DPatch-v1.aux)
 
 LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  )
 (\end occurred inside a group at level 1)
@@ -880,13 +886,13 @@ LaTeX Warning: There were undefined references.
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 9503 strings out of 493333
- 131760 string characters out of 3139194
- 381793 words of memory out of 3000000
- 12785 multiletter control sequences out of 15000+200000
+ 9515 strings out of 493333
+ 131972 string characters out of 3139194
+ 382175 words of memory out of 3000000
+ 12795 multiletter control sequences out of 15000+200000
  16612 words of font info for 69 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 40i,15n,39p,3282b,2942s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 40i,15n,39p,3282b,2943s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmb
 x10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Progr
@@ -907,9 +913,9 @@ fonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
 cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.p
 fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti7.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on MEDIA-3DPatch-v1.pdf (38 pages, 1370699 bytes).
+Output written on MEDIA-3DPatch-v1.pdf (39 pages, 2386455 bytes).
 PDF statistics:
- 229 PDF objects out of 1000 (max. 8388607)
+ 233 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 36 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 46 words of extra memory for PDF output out of 10000 (max. 10000000)
 
