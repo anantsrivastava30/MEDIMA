@@ -14,6 +14,75 @@
 \citation{guyon2008feature}
 \citation{jolliffe2002principal}
 \citation{mika1999fisher}
+\citation{boureau2010theoretical}
+\citation{rojas2009adaboost}
+\citation{zhang2016applying}
+\citation{kakimoto2011new}
+\citation{lu2017early}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Different types of P.E.T Scans\relax }}{5}}
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{fig:pet_raw}{{1}{5}}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Methods and Material}{5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Theoretical Background}{5}}
+\newlabel{sec:theoritical_background}{{2.1}{5}}
+\citation{jolliffe2002principal}
+\citation{tipping1999mixtures}
+\citation{freund1996experiments}
+\citation{schapire2013explaining}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Pooling layer down-samples the volume spatially, independently in each depth slice of the input volume. Left: In this example, the input volume of size [256×256×16] is pooled with filter size 2; stride 2 into output volume of size [128×128×16]. Notice that the volume depth is preserved. Right: The most common down-sampling operation is max, giving rise to max-pooling, and here shown with a stride of 2, each max value is taken over 4 numbers (little 2×2 square).\relax }}{8}}
+\newlabel{fig:maxpooling}{{2}{8}}
+\citation{penny2011statistical}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Computational Algorithms}{9}}
+\newlabel{sec:computational_algorithm}{{2.2}{9}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.1}FDG-PET acquisition and preprocessing using SPM (Statistical Parametric Mapping)}{9}}
+\newlabel{sec:preprocess}{{2.2.1}{9}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Illustration of the AdoBoost Algorithm.}}{10}}
+\newlabel{fig:adaboost}{{3}{10}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Unstructured and Structured patches in Axial, Sagittal and Coronal view of the brain.}}{11}}
+\newlabel{fig:patches}{{4}{11}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.2}Patch Generation and Image Representation}{11}}
+\newlabel{sec:patch_generation}{{2.2.2}{11}}
+\citation{jolliffe2002principal}
+\citation{mika1999fisher}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.3}Feature Selection and Extraction}{12}}
+\newlabel{sec:pipline}{{2.2.3}{12}}
+\citation{tipping1999mixtures}
+\@writefile{loa}{\contentsline {algocf}{\numberline {1}{\ignorespaces Patch Based Feature Extraction \& Dimensionality Reduction Pipeline\relax }}{14}}
+\newlabel{alg:pipeline}{{1}{14}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Pipelines for Patch based Feature Extraction}}{15}}
+\newlabel{fig:pipeline}{{5}{15}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Subjects}{16}}
+\newlabel{sec:subjects}{{2.3}{16}}
+\citation{fawcett2004roc}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Demographic Information of $668$ Subjects in the ADNI2 Baseline Dataset.\relax }}{17}}
+\newlabel{tab:demographic}{{1}{17}}
+\@writefile{toc}{\contentsline {section}{\numberline {3}Experimental Results}{17}}
+\newlabel{sec:results}{{3}{17}}
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces The Confusion Matrix\relax }}{18}}
+\newlabel{tab:confusion_matrix}{{2}{18}}
+\citation{swets1979roc}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Variety of Features}{19}}
+\newlabel{subsection:feature_comp}{{3.1}{19}}
+\citation{mika1998kernel}
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Comparison Results between Sets of Features}}{20}}
+\newlabel{tab:feature_comp}{{3}{20}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Comparing Fearure learning algorithms}{20}}
+\newlabel{subsection:dim_red}{{3.2}{20}}
+\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces Classification Results with PCA, SVD and Kernel PCA}}{21}}
+\newlabel{tab:comparision_dimension_reduction}{{4}{21}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Comparing Classifiers}{22}}
+\newlabel{subsection:classifier_comp}{{3.3}{22}}
+\citation{lin2014stochastic,olshausen1996emergence}
+\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces Classification Results between Classifiers using Feature Extraction}}{23}}
+\newlabel{tab:comparision_classifiers}{{5}{23}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4}Comparing Dimensionality Reduction with Sparse Coding}{23}}
+\newlabel{subsection:method_comp}{{3.4}{23}}
+\@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces Classification Results between Classifiers using Feature Extraction}}{24}}
+\newlabel{tab:dim/SC}{{6}{24}}
+\citation{zhang2016applying,zhang2016hyperbolic}
+\citation{?.?}
+\citation{gregor2010learning}
+\citation{vincent2010stacked,baldi2012autoencoders}
 \citation{masaeli2010transformation}
 \citation{schnass2008dictionary}
 \citation{lin2014stochastic}
@@ -22,132 +91,67 @@
 \citation{yin2008bregman}
 \citation{lv2015holistic,lv2015modeling}
 \citation{mairal2009online,moody2012unsupervised,lv2015modeling}
-\citation{boureau2010theoretical}
-\citation{rojas2009adaboost}
-\citation{zhang2016applying}
-\citation{kakimoto2011new}
-\citation{lu2017early}
-\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Different types of P.E.T Scans\relax }}{6}}
-\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
-\newlabel{fig:pet_raw}{{1}{6}}
-\@writefile{toc}{\contentsline {section}{\numberline {2}Methods and Material}{6}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Theoretical Background}{6}}
-\newlabel{subsec:theoritical_background}{{2.1}{6}}
-\citation{jolliffe2002principal}
-\citation{tipping1999mixtures}
-\citation{freund1996experiments}
-\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Pooling layer down-samples the volume spatially, independently in each depth slice of the input volume. Left: In this example, the input volume of size [256×256×16] is pooled with filter size 2; stride 2 into output volume of size [128×128×16]. Notice that the volume depth is preserved. Right: The most common down-sampling operation is max, giving rise to max-pooling, and here shown with a stride of 2, each max value is taken over 4 numbers (little 2×2 square).\relax }}{8}}
-\newlabel{fig:maxpooling}{{2}{8}}
-\citation{schapire2013explaining}
-\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Illustration of the AdoBoost Algorithm.}}{10}}
-\newlabel{fig:adaboost}{{3}{10}}
-\citation{penny2011statistical}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Computational Algorithms}{11}}
-\newlabel{subsec:computational_algorithm}{{2.2}{11}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.1}FDG-PET acquisition and preprocessing using SPM (Statistical Parametric Mapping)}{11}}
-\newlabel{sec:preprocess}{{2.2.1}{11}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Unstructured and Structured patches in Axial, Sagittal and Coronal view of the brain.}}{12}}
-\newlabel{fig:patches}{{4}{12}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.2}Patch Generation and Image Representation}{12}}
-\newlabel{sec:patch_generation}{{2.2.2}{12}}
-\citation{jolliffe2002principal}
-\citation{mika1999fisher}
-\citation{tipping1999mixtures}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.3}Feature Selection and Extraction}{13}}
-\newlabel{subsec:pipline}{{2.2.3}{13}}
-\@writefile{loa}{\contentsline {algocf}{\numberline {1}{\ignorespaces Patch Based Feature Extraction \& Dimensionality Reduction Pipeline\relax }}{15}}
-\newlabel{alg:pipeline}{{1}{15}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Pipelines for Patch based Feature Extraction}}{16}}
-\newlabel{fig:pipeline}{{5}{16}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Subjects}{17}}
-\newlabel{sec:subjects}{{2.3}{17}}
-\citation{fawcett2004roc}
-\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Demographic Information of $668$ Subjects in the ADNI2 Baseline Dataset.\relax }}{18}}
-\newlabel{tab:demographic}{{1}{18}}
-\@writefile{toc}{\contentsline {section}{\numberline {3}Experimental Results}{18}}
-\newlabel{sec:results}{{3}{18}}
-\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces The Confusion Matrix\relax }}{19}}
-\newlabel{tab:confusion_matrix}{{2}{19}}
-\citation{swets1979roc}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Variety of Features}{20}}
-\newlabel{subsection:feature_comp}{{3.1}{20}}
-\citation{mika1998kernel}
-\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Comparison Results between Sets of Features}}{21}}
-\newlabel{tab:feature_comp}{{3}{21}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Comparing Fearure learning algorithms}{21}}
-\newlabel{subsection:dim_red}{{3.2}{21}}
-\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces Classification Results with PCA, SVD and Kernel PCA}}{22}}
-\newlabel{tab:comparision_dimension_reduction}{{4}{22}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Comparing Classifiers}{23}}
-\newlabel{subsection:classifier_comp}{{3.3}{23}}
-\citation{lin2014stochastic,olshausen1996emergence}
-\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces Classification Results between Classifiers using Feature Extraction}}{24}}
-\newlabel{tab:comparision_classifiers}{{5}{24}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.4}Comparing Dimensionality Reduction with Sparse Coding}{24}}
-\newlabel{subsection:method_comp}{{3.4}{24}}
-\@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces Classification Results between Classifiers using Feature Extraction}}{25}}
-\newlabel{tab:dim/SC}{{6}{25}}
-\citation{zhang2016applyiong,zhang2016hyperbolic}
-\citation{?.?}
-\citation{gregor2010learning}
-\citation{vincent2010stacked,baldi2012autoencoders}
-\@writefile{toc}{\contentsline {section}{\numberline {4}Discussion}{27}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Methods for ADNI classification using PET subsectioncans}{27}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Discussion}{26}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces ROC comparing all clinical groups\relax }}{27}}
+\newlabel{fig:auc}{{6}{27}}
 \citation{ishii2014pet}
 \citation{herholz2002discrimination}
-\citation{illan201118}
-\citation{higdon2004comparison}
+\citation{illan201118,higdon2004comparison}
 \citation{kakimoto2011new}
 \citation{lu2017early}
 \citation{zhang2016hyperbolic,zhang2016applying}
 \citation{coupe2011patch}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Methods for ADNI classification using PET subsectioncans}{28}}
 \citation{lin2014stochastic,mairal2009online}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.1.1}Finding Dictionary and Sparse Codes}{28}}
-\newlabel{sec:dictionary_learning}{{4.1.1}{28}}
-\@writefile{toc}{\contentsline {section}{\numberline {5}Conclusion and Future Work}{29}}
-\@writefile{loa}{\contentsline {algocf}{\numberline {2}{\ignorespaces Patch Based Stochastic Coordinate Coding\relax }}{30}}
-\newlabel{alg:pipeline1}{{2}{30}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.1.1}Finding Dictionary and Sparse Codes}{29}}
+\newlabel{sec:dictionary_learning}{{4.1.1}{29}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces One Iteration of SCC}}{30}}
+\newlabel{fig:iteration}{{7}{30}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Conclusion and Future Work}{30}}
 \citation{lin2014stochastic}
-\@writefile{toc}{\contentsline {subsection}{\numberline {Appendix .1}\textbf  {Stochastic Coordinate Coding}}{31}}
-\newlabel{app:SCC}{{Appendix .1}{31}}
-\@writefile{loa}{\contentsline {algocf}{\numberline {3}{\ignorespaces SCC (Stochastic Coordinate Coding)\relax }}{33}}
-\newlabel{alg:scc}{{3}{33}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {Appendix .1}\textbf  {Stochastic Coordinate Coding}}{32}}
+\newlabel{sec:app:SCC}{{Appendix .1}{32}}
+\@writefile{loa}{\contentsline {algocf}{\numberline {2}{\ignorespaces SCC (Stochastic Coordinate Coding)\relax }}{33}}
+\newlabel{alg:scc}{{2}{33}}
 \bibstyle{model2-names}
 \bibdata{confinv}
-\bibcite{boureau2010theoretical}{{1}{2010}{{Boureau et~al.}}{{Boureau, Ponce and LeCun}}}
-\bibcite{Burns2009}{{2}{}{{Burns and Iliffe}}{{}}}
-\bibcite{fawcett2004roc}{{3}{2004}{{Fawcett}}{{}}}
-\bibcite{freund1996experiments}{{4}{1996}{{Freund et~al.}}{{Freund, Schapire et~al.}}}
-\bibcite{friedman2001elements}{{5}{2001}{{Friedman et~al.}}{{Friedman, Hastie and Tibshirani}}}
-\bibcite{guyon2008feature}{{6}{2008}{{Guyon et~al.}}{{Guyon, Gunn, Nikravesh and Zadeh}}}
-\bibcite{herholz2002discrimination}{{7}{2002}{{Herholz et~al.}}{{Herholz, Salmon, Perani, Baron, Holthoff, Fr{\"o}lich, Sch{\"o}nknecht, Ito, Mielke, Kalbe et~al.}}}
-\bibcite{higdon2004comparison}{{8}{2004}{{Higdon et~al.}}{{Higdon, Foster, Koeppe, DeCarli, Jagust, Clark, Barbas, Arnold, Turner, Heidebrink et~al.}}}
-\bibcite{illan201118}{{9}{2011}{{Ill{\'a}n et~al.}}{{Ill{\'a}n, G{\'o}rriz, Ram{\'\i }rez, Salas-Gonzalez, L{\'o}pez, Segovia, Chaves, G{\'o}mez-Rio, Puntonet, Initiative et~al.}}}
-\bibcite{jain1997feature}{{10}{1997}{{Jain and Zongker}}{{}}}
-\bibcite{jolliffe2002principal}{{11}{2002}{{Jolliffe}}{{}}}
-\bibcite{kakimoto2011new}{{12}{2011}{{Kakimoto et~al.}}{{Kakimoto, Kamekawa, Ito, Yoshikawa, Okada, Nishizawa, Minoshima and Ouchi}}}
-\bibcite{langbaum2013ushering}{{13}{2013}{{Langbaum et~al.}}{{Langbaum, Fleisher, Chen, Ayutyanont, Lopera, Quiroz, Caselli, Tariot and Reiman}}}
-\bibcite{lin2014stochastic}{{14}{2014}{{Lin et~al.}}{{Lin, Li, Sun, Lai, Davidson, Fan and Ye}}}
-\bibcite{liu2007computational}{{15}{2007}{{Liu and Motoda}}{{}}}
-\bibcite{lu2017early}{{16}{2017}{{Lu et~al.}}{{Lu, Xia, Cai, Fulham, Feng, Initiative et~al.}}}
-\bibcite{lv2015holistic}{{17}{2015a}{{Lv et~al.}}{{Lv, Jiang, Li, Zhu, Zhang, Zhao, Chen, Zhang, Hu, Han et~al.}}}
-\bibcite{lv2015modeling}{{18}{2015b}{{Lv et~al.}}{{Lv, Lin, Zhang, Jiang, Hu, Han, Guo, Ye and Liu}}}
-\bibcite{mairal2009online}{{19}{2009}{{Mairal et~al.}}{{Mairal, Bach, Ponce and Sapiro}}}
-\bibcite{masaeli2010transformation}{{20}{2010}{{Masaeli et~al.}}{{Masaeli, Dy and Fung}}}
-\bibcite{mika1999fisher}{{21}{1999}{{Mika et~al.}}{{Mika, Ratsch, Weston, Scholkopf and Mullers}}}
-\bibcite{mika1998kernel}{{22}{1998}{{Mika et~al.}}{{Mika, Sch{\"o}lkopf, Smola, M{\"u}ller, Scholz and R{\"a}tsch}}}
-\bibcite{moody2012unsupervised}{{23}{2012}{{Moody et~al.}}{{Moody, Brumby, Rowland and Gangodagamage}}}
-\bibcite{olshausen1996emergence}{{24}{1996}{{Olshausen and Field}}{{}}}
-\bibcite{penny2011statistical}{{25}{2011}{{Penny et~al.}}{{Penny, Friston, Ashburner, Kiebel and Nichols}}}
-\bibcite{rojas2009adaboost}{{26}{2009}{{Rojas}}{{}}}
-\bibcite{schapire2013explaining}{{27}{2013}{{Schapire}}{{}}}
-\bibcite{schnass2008dictionary}{{28}{2008}{{Schnass and Vandergheynst}}{{}}}
-\bibcite{tang2014feature}{{29}{2014}{{Tang et~al.}}{{Tang, Alelyani and Liu}}}
-\bibcite{tipping1999mixtures}{{30}{1999}{{Tipping and Bishop}}{{}}}
-\bibcite{weiner2013alzheimer}{{31}{2013}{{Weiner et~al.}}{{Weiner, Veitch, Aisen, Beckett, Cairns, Green, Harvey, Jack, Jagust, Liu et~al.}}}
-\bibcite{yin2008bregman}{{32}{2008}{{Yin et~al.}}{{Yin, Osher, Goldfarb and Darbon}}}
-\bibcite{zhang2016applying}{{33}{2016}{{Zhang et~al.}}{{Zhang, Stonnington, Li, Shi, Bauer, Gutman, Chen, Reiman, Thompson, Ye et~al.}}}
-\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces ROC comparing all clinical groups\relax }}{38}}
-\newlabel{fig:auc}{{6}{38}}
-\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces One Iteration of SCC}}{39}}
-\newlabel{fig:iteration}{{7}{39}}
+\bibcite{baldi2012autoencoders}{{1}{2012}{{Baldi}}{{}}}
+\bibcite{boureau2010theoretical}{{2}{2010}{{Boureau et~al.}}{{Boureau, Ponce and LeCun}}}
+\bibcite{Burns2009}{{3}{}{{Burns and Iliffe}}{{}}}
+\bibcite{coupe2011patch}{{4}{2011}{{Coup{\'e} et~al.}}{{Coup{\'e}, Manj{\'o}n, Fonov, Pruessner, Robles and Collins}}}
+\bibcite{fawcett2004roc}{{5}{2004}{{Fawcett}}{{}}}
+\bibcite{freund1996experiments}{{6}{1996}{{Freund et~al.}}{{Freund, Schapire et~al.}}}
+\bibcite{friedman2001elements}{{7}{2001}{{Friedman et~al.}}{{Friedman, Hastie and Tibshirani}}}
+\bibcite{gregor2010learning}{{8}{2010}{{Gregor and LeCun}}{{}}}
+\bibcite{guyon2008feature}{{9}{2008}{{Guyon et~al.}}{{Guyon, Gunn, Nikravesh and Zadeh}}}
+\bibcite{herholz2002discrimination}{{10}{2002}{{Herholz et~al.}}{{Herholz, Salmon, Perani, Baron, Holthoff, Fr{\"o}lich, Sch{\"o}nknecht, Ito, Mielke, Kalbe et~al.}}}
+\bibcite{higdon2004comparison}{{11}{2004}{{Higdon et~al.}}{{Higdon, Foster, Koeppe, DeCarli, Jagust, Clark, Barbas, Arnold, Turner, Heidebrink et~al.}}}
+\bibcite{illan201118}{{12}{2011}{{Ill{\'a}n et~al.}}{{Ill{\'a}n, G{\'o}rriz, Ram{\'\i }rez, Salas-Gonzalez, L{\'o}pez, Segovia, Chaves, G{\'o}mez-Rio, Puntonet, Initiative et~al.}}}
+\bibcite{ishii2014pet}{{13}{2014}{{Ishii}}{{}}}
+\bibcite{jain1997feature}{{14}{1997}{{Jain and Zongker}}{{}}}
+\bibcite{jolliffe2002principal}{{15}{2002}{{Jolliffe}}{{}}}
+\bibcite{kakimoto2011new}{{16}{2011}{{Kakimoto et~al.}}{{Kakimoto, Kamekawa, Ito, Yoshikawa, Okada, Nishizawa, Minoshima and Ouchi}}}
+\bibcite{langbaum2013ushering}{{17}{2013}{{Langbaum et~al.}}{{Langbaum, Fleisher, Chen, Ayutyanont, Lopera, Quiroz, Caselli, Tariot and Reiman}}}
+\bibcite{lin2014stochastic}{{18}{2014}{{Lin et~al.}}{{Lin, Li, Sun, Lai, Davidson, Fan and Ye}}}
+\bibcite{liu2007computational}{{19}{2007}{{Liu and Motoda}}{{}}}
+\bibcite{lu2017early}{{20}{2017}{{Lu et~al.}}{{Lu, Xia, Cai, Fulham, Feng, Initiative et~al.}}}
+\bibcite{lv2015holistic}{{21}{2015a}{{Lv et~al.}}{{Lv, Jiang, Li, Zhu, Zhang, Zhao, Chen, Zhang, Hu, Han et~al.}}}
+\bibcite{lv2015modeling}{{22}{2015b}{{Lv et~al.}}{{Lv, Lin, Zhang, Jiang, Hu, Han, Guo, Ye and Liu}}}
+\bibcite{mairal2009online}{{23}{2009}{{Mairal et~al.}}{{Mairal, Bach, Ponce and Sapiro}}}
+\bibcite{masaeli2010transformation}{{24}{2010}{{Masaeli et~al.}}{{Masaeli, Dy and Fung}}}
+\bibcite{mika1999fisher}{{25}{1999}{{Mika et~al.}}{{Mika, Ratsch, Weston, Scholkopf and Mullers}}}
+\bibcite{mika1998kernel}{{26}{1998}{{Mika et~al.}}{{Mika, Sch{\"o}lkopf, Smola, M{\"u}ller, Scholz and R{\"a}tsch}}}
+\bibcite{moody2012unsupervised}{{27}{2012}{{Moody et~al.}}{{Moody, Brumby, Rowland and Gangodagamage}}}
+\bibcite{olshausen1996emergence}{{28}{1996}{{Olshausen and Field}}{{}}}
+\bibcite{penny2011statistical}{{29}{2011}{{Penny et~al.}}{{Penny, Friston, Ashburner, Kiebel and Nichols}}}
+\bibcite{rojas2009adaboost}{{30}{2009}{{Rojas}}{{}}}
+\bibcite{schapire2013explaining}{{31}{2013}{{Schapire}}{{}}}
+\bibcite{schnass2008dictionary}{{32}{2008}{{Schnass and Vandergheynst}}{{}}}
+\bibcite{swets1979roc}{{33}{1979}{{Swets}}{{}}}
+\bibcite{tang2014feature}{{34}{2014}{{Tang et~al.}}{{Tang, Alelyani and Liu}}}
+\bibcite{tipping1999mixtures}{{35}{1999}{{Tipping and Bishop}}{{}}}
+\bibcite{vincent2010stacked}{{36}{2010}{{Vincent et~al.}}{{Vincent, Larochelle, Lajoie, Bengio and Manzagol}}}
+\bibcite{weiner2013alzheimer}{{37}{2013}{{Weiner et~al.}}{{Weiner, Veitch, Aisen, Beckett, Cairns, Green, Harvey, Jack, Jagust, Liu et~al.}}}
+\bibcite{yin2008bregman}{{38}{2008}{{Yin et~al.}}{{Yin, Osher, Goldfarb and Darbon}}}
+\bibcite{zhang2016hyperbolic}{{39}{2016a}{{Zhang et~al.}}{{Zhang, Shi, Stonnington, Li, Gutman, Chen, Reiman, Caselli, Thompson, Ye et~al.}}}
+\bibcite{zhang2016applying}{{40}{2016b}{{Zhang et~al.}}{{Zhang, Stonnington, Li, Shi, Bauer, Gutman, Chen, Reiman, Thompson, Ye et~al.}}}

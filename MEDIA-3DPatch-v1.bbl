@@ -1,4 +1,4 @@
-\begin{thebibliography}{33}
+\begin{thebibliography}{40}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \expandafter\ifx\csname url\endcsname\relax
   \def\url#1{\texttt{#1}}\fi
@@ -6,6 +6,12 @@
 \providecommand{\eprint}[2][]{\url{#2}}
 \providecommand{\bibinfo}[2]{#2}
 \ifx\xfnm\relax \def\xfnm[#1]{\unskip,\space#1}\fi
+%Type = Inproceedings
+\bibitem[{Baldi(2012)}]{baldi2012autoencoders}
+\bibinfo{author}{Baldi, P.}, \bibinfo{year}{2012}.
+\newblock \bibinfo{title}{Autoencoders, unsupervised learning, and deep
+  architectures}, in: \bibinfo{booktitle}{Proceedings of ICML Workshop on
+  Unsupervised and Transfer Learning}, pp. \bibinfo{pages}{37--49}.
 %Type = Inproceedings
 \bibitem[{Boureau et~al.(2010)Boureau, Ponce and
   LeCun}]{boureau2010theoretical}
@@ -19,6 +25,17 @@
 \bibinfo{author}{Burns, D.A.}, \bibinfo{author}{Iliffe, S.}, .
 \newblock \bibinfo{title}{Enfermedad de {A}lzheimer} , \bibinfo{pages}{338,
   b158.}
+%Type = Article
+\bibitem[{Coup{\'e} et~al.(2011)Coup{\'e}, Manj{\'o}n, Fonov, Pruessner, Robles
+  and Collins}]{coupe2011patch}
+\bibinfo{author}{Coup{\'e}, P.}, \bibinfo{author}{Manj{\'o}n, J.V.},
+  \bibinfo{author}{Fonov, V.}, \bibinfo{author}{Pruessner, J.},
+  \bibinfo{author}{Robles, M.}, \bibinfo{author}{Collins, D.L.},
+  \bibinfo{year}{2011}.
+\newblock \bibinfo{title}{Patch-based segmentation using expert priors:
+  Application to hippocampus and ventricle segmentation}.
+\newblock \bibinfo{journal}{NeuroImage} \bibinfo{volume}{54},
+  \bibinfo{pages}{940--954}.
 %Type = Article
 \bibitem[{Fawcett(2004)}]{fawcett2004roc}
 \bibinfo{author}{Fawcett, T.}, \bibinfo{year}{2004}.
@@ -40,6 +57,13 @@
 \newblock \bibinfo{title}{The elements of statistical learning}.
   volume~\bibinfo{volume}{1}.
 \newblock \bibinfo{publisher}{Springer series in statistics Springer, Berlin}.
+%Type = Inproceedings
+\bibitem[{Gregor and LeCun(2010)}]{gregor2010learning}
+\bibinfo{author}{Gregor, K.}, \bibinfo{author}{LeCun, Y.},
+  \bibinfo{year}{2010}.
+\newblock \bibinfo{title}{Learning fast approximations of sparse coding}, in:
+  \bibinfo{booktitle}{Proceedings of the 27th International Conference on
+  Machine Learning (ICML-10)}, pp. \bibinfo{pages}{399--406}.
 %Type = Book
 \bibitem[{Guyon et~al.(2008)Guyon, Gunn, Nikravesh and
   Zadeh}]{guyon2008feature}
@@ -91,6 +115,12 @@
   alzheimer’s diagnosis}.
 \newblock \bibinfo{journal}{Information Sciences} \bibinfo{volume}{181},
   \bibinfo{pages}{903--916}.
+%Type = Article
+\bibitem[{Ishii(2014)}]{ishii2014pet}
+\bibinfo{author}{Ishii, K.}, \bibinfo{year}{2014}.
+\newblock \bibinfo{title}{Pet approaches for diagnosis of dementia}.
+\newblock \bibinfo{journal}{American Journal of Neuroradiology}
+  \bibinfo{volume}{35}, \bibinfo{pages}{2030--2038}.
 %Type = Article
 \bibitem[{Jain and Zongker(1997)}]{jain1997feature}
 \bibinfo{author}{Jain, A.}, \bibinfo{author}{Zongker, D.},
@@ -260,6 +290,13 @@
   Signal Processing, 2008. ISCCSP 2008. 3rd International Symposium on},
   \bibinfo{organization}{IEEE}. pp. \bibinfo{pages}{780--785}.
 %Type = Article
+\bibitem[{Swets(1979)}]{swets1979roc}
+\bibinfo{author}{Swets, J.A.}, \bibinfo{year}{1979}.
+\newblock \bibinfo{title}{Roc analysis applied to the evaluation of medical
+  imaging techniques.}
+\newblock \bibinfo{journal}{Investigative radiology} \bibinfo{volume}{14},
+  \bibinfo{pages}{109--121}.
+%Type = Article
 \bibitem[{Tang et~al.(2014)Tang, Alelyani and Liu}]{tang2014feature}
 \bibinfo{author}{Tang, J.}, \bibinfo{author}{Alelyani, S.},
   \bibinfo{author}{Liu, H.}, \bibinfo{year}{2014}.
@@ -274,6 +311,16 @@
   analyzers}.
 \newblock \bibinfo{journal}{Neural computation} \bibinfo{volume}{11},
   \bibinfo{pages}{443--482}.
+%Type = Article
+\bibitem[{Vincent et~al.(2010)Vincent, Larochelle, Lajoie, Bengio and
+  Manzagol}]{vincent2010stacked}
+\bibinfo{author}{Vincent, P.}, \bibinfo{author}{Larochelle, H.},
+  \bibinfo{author}{Lajoie, I.}, \bibinfo{author}{Bengio, Y.},
+  \bibinfo{author}{Manzagol, P.A.}, \bibinfo{year}{2010}.
+\newblock \bibinfo{title}{Stacked denoising autoencoders: Learning useful
+  representations in a deep network with a local denoising criterion}.
+\newblock \bibinfo{journal}{Journal of Machine Learning Research}
+  \bibinfo{volume}{11}, \bibinfo{pages}{3371--3408}.
 %Type = Article
 \bibitem[{Weiner et~al.(2013)Weiner, Veitch, Aisen, Beckett, Cairns, Green,
   Harvey, Jack, Jagust, Liu et~al.}]{weiner2013alzheimer}
@@ -297,13 +344,27 @@
 \newblock \bibinfo{journal}{SIAM Journal on Imaging sciences}
   \bibinfo{volume}{1}, \bibinfo{pages}{143--168}.
 %Type = Inproceedings
-\bibitem[{Zhang et~al.(2016)Zhang, Stonnington, Li, Shi, Bauer, Gutman, Chen,
+\bibitem[{Zhang et~al.(2016a)Zhang, Shi, Stonnington, Li, Gutman, Chen, Reiman,
+  Caselli, Thompson, Ye et~al.}]{zhang2016hyperbolic}
+\bibinfo{author}{Zhang, J.}, \bibinfo{author}{Shi, J.},
+  \bibinfo{author}{Stonnington, C.}, \bibinfo{author}{Li, Q.},
+  \bibinfo{author}{Gutman, B.A.}, \bibinfo{author}{Chen, K.},
+  \bibinfo{author}{Reiman, E.M.}, \bibinfo{author}{Caselli, R.},
+  \bibinfo{author}{Thompson, P.M.}, \bibinfo{author}{Ye, J.}, et~al.,
+  \bibinfo{year}{2016}a.
+\newblock \bibinfo{title}{Hyperbolic space sparse coding with its application
+  on prediction of alzheimer’s disease in mild cognitive impairment}, in:
+  \bibinfo{booktitle}{International Conference on Medical Image Computing and
+  Computer-Assisted Intervention}, \bibinfo{organization}{Springer}. pp.
+  \bibinfo{pages}{326--334}.
+%Type = Inproceedings
+\bibitem[{Zhang et~al.(2016b)Zhang, Stonnington, Li, Shi, Bauer, Gutman, Chen,
   Reiman, Thompson, Ye et~al.}]{zhang2016applying}
 \bibinfo{author}{Zhang, J.}, \bibinfo{author}{Stonnington, C.},
   \bibinfo{author}{Li, Q.}, \bibinfo{author}{Shi, J.}, \bibinfo{author}{Bauer,
   R.J.}, \bibinfo{author}{Gutman, B.A.}, \bibinfo{author}{Chen, K.},
   \bibinfo{author}{Reiman, E.M.}, \bibinfo{author}{Thompson, P.M.},
-  \bibinfo{author}{Ye, J.}, et~al., \bibinfo{year}{2016}.
+  \bibinfo{author}{Ye, J.}, et~al., \bibinfo{year}{2016}b.
 \newblock \bibinfo{title}{Applying sparse coding to surface multivariate
   tensor-based morphometry to predict future cognitive decline}, in:
   \bibinfo{booktitle}{Biomedical Imaging (ISBI), 2016 IEEE 13th International

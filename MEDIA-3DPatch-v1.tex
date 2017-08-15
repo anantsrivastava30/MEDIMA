@@ -14,6 +14,9 @@
 \usepackage{changepage}
 \usepackage{tabularx ,booktabs,wrapfig,lipsum,ragged2e}
 \usepackage{multirow}
+\usepackage{float}
+\floatstyle{boxed} 
+\restylefloat{figure}
 \newcommand{\ra}[1]{\renewcommand{\arraystretch}{#1}}
 
 \newtheorem{definition}{Definition}
@@ -34,10 +37,10 @@
 \newcommand{\Etal}    {{\it et al}.}
 \newcommand{\trans}   {\psi}
 \newcommand{\acc}[1]     {$ #1 \% $}
-\newcommand{\Alzheimers} {{Alzheimer\textquoteright s} }
+\newcommand{\Alz} {{Alzheimer\textquoteright s} }
 \newcommand{\Hotellings} {{Hotelling\textquoteright s} }
 \newcommand{\F}   {$ \textrm{F}_1 $}
-\newcommand{\FDGPET}   {$ ^{18}\textrm{F-FDG PET} $}
+\newcommand{\FDGPET}   {$ ^{18}\textrm{F-FDG PET} $~}
 \newcommand{\apoe}[1]   {Apoe$ E $#1}
 
 % \biboptions{}
@@ -61,7 +64,7 @@
 
 \begin{frontmatter}
 
-\title{3D - Patch Based Feature Extraction for Alzheimer's Disease Diagnosis via FDG-PET Analysis}
+\title{3D - Patch Based Feature Extraction for \Alz Disease Diagnosis via FDG-PET Analysis}
 
 \author[asu]{Anant Srivastava}
 \author[asu]{Shibani Singh}
@@ -71,10 +74,10 @@
 \author[Banner]{\mbox{Kewei Chen}}
 \author[Banner]{\mbox{Eric Reiman}}
 \author[asu]{\mbox{Yalin Wang}\corref{cor1}}
-\author{\mbox{for the Alzheimer's Disease Neuroimaging Initiative}}
+\author{\mbox{for the \Alz Disease Neuroimaging Initiative}}
 \address[asu] {School of Computing, Informatics, and Decision Systems Engineering, Arizona State University, Tempe, AZ, USA}
 \address[Banner] {
-Banner Alzheimer's Institute, \\
+Banner \Alz Institute, \\
 Phoenix, AZ, USA}
 
 
@@ -109,19 +112,19 @@ Data used in preparation of this article were obtained from the phase two of the
 
 %%%%%%%%% ABSTRACT
 \begin{abstract}
-Alzheimer's disease (AD), is a chronic neurodegenerative disease that usually starts slowly and gets worse over time. It is the cause of 60\% to 70\% of cases of dementia. There is growing interest in identifying brain image biomarkers that help evaluate AD risk pre-symptomatically. High-dimensional non-linear pattern classification methods have been applied to structural magnetic resonance images (MRI's) and used to discriminate between clinical groups in Alzheimer’s progression. 
-Using Fluorodeoxyglucose (FDG) positron emission tomography (PET) as the preferred imaging modality, this paper develops a 3D patch based machine learning model and uses it to perform six binary classification experiments across different (AD) diagnostic categories. Specifically, from the PET image scans features were extracted and learned using probablistic PCA by taking overlapping patches in and around the cerebral cortex and using them as features. Using AdaBoost as the preferred choice of classifier both methods try to utilize \FDGPET~as a biological marker in the early diagnosis of \Alzheimers. Additional we investigate the involvement of rich demographic features (\apoe{3}, \apoe{4} and Functional Activities Questionnaires (FAQ)) in classification. The experimental results on Alzheimer's Disease Neuroimaging initiative (ADNI) dataset demonstrate the effectiveness of both the proposed systems. The paper reports a very high accuracy when comparing AD to Cognitively Normal and concludes that for least group seperation in disease progession the approach needs to be adhoc and extremely fractional. The use of \FDGPET~may offer a new sensitive biomarker and enrich the brain imaging analysis toolset for studying the diagnosis and prognosis of AD.
+\Alz disease (AD), is a chronic neurodegenerative disease that usually starts slowly and gets worse over time. It is the cause of 60\% to 70\% of cases of dementia. There is growing interest in identifying brain image biomarkers that help evaluate AD risk pre-symptomatically. High-dimensional non-linear pattern classification methods have been applied to structural magnetic resonance images (MRI's) and used to discriminate between clinical groups in \Alz progression. 
+Using Fluorodeoxyglucose (FDG) positron emission tomography (PET) as the preferred imaging modality, this paper develops a 3D patch based machine learning model and uses it to perform six binary classification experiments across different (AD) diagnostic categories. Specifically, from the PET image scans features were extracted and learned using probablistic PCA by taking overlapping patches in and around the cerebral cortex and using them as features. Using AdaBoost as the preferred choice of classifier both methods try to utilize \FDGPET~as a biological marker in the early diagnosis of \Alz. Additional we investigate the involvement of rich demographic features (\apoe{3}, \apoe{4} and Functional Activities Questionnaires (FAQ)) in classification. The experimental results on \Alz Disease Neuroimaging initiative (ADNI) dataset demonstrate the effectiveness of both the proposed systems. The paper reports a very high accuracy when comparing AD to Cognitively Normal and concludes that for least group seperation in disease progession the approach needs to be adhoc and extremely fractional. The use of \FDGPET~may offer a new sensitive biomarker and enrich the brain imaging analysis toolset for studying the diagnosis and prognosis of AD.
 
 \end{abstract}
 \begin{keyword}
-Probablistic PCA, Max-pooling, Ada-boost, Alzheimer's Disease, ADNI2. 
+Probablistic PCA, Max-pooling, Ada-boost, \Alz Disease, ADNI2. 
 \end{keyword}
 % \PACS{PACS code1 \and PACS code2 \and more}
 % \subclass{MSC code1 \and MSC code2 \and more}
 \end{frontmatter}
 
 \section{Introduction}
-Alzheimer’s disease (AD) is a chronic neurodegenerative disease in which amyloid plaques and neurofibrillary tangles accumulate in the brain. The most common early symptom is the difficulty remembering recent events (short-term memory loss). As the disease advances, patients may lack motivation, have problems with self-care, and show behavioral abnormalities or even withdraw from family and society \citep{Burns2009}. AD has a typical pattern of progression, with changes in the brain that correspond to the types and severity of symptoms. Disease progression has commonly been divided into five main categories in the ADNI2 phase of Alzheimer's Disease Neuroimaging initiative(ADNI) \citep{weiner2013alzheimer}: Cognitively Normal (CN), Significant Memory Concern(SMC), Early Mild Cognitive Impairment (EMCI), Impairment (LMCI) and Alzheimer's Disease (AD), defined clinically based on behavioral and cognitive assessment. (SMC) are self-report significant memory concern from the patient we choose to exclude it from our study.
+\Alz disease (AD) is a chronic neurodegenerative disease in which amyloid plaques and neurofibrillary tangles accumulate in the brain. The most common early symptom is the difficulty remembering recent events (short-term memory loss). As the disease advances, patients may lack motivation, have problems with self-care, and show behavioral abnormalities or even withdraw from family and society \citep{Burns2009}. AD has a typical pattern of progression, with changes in the brain that correspond to the types and severity of symptoms. Disease progression has commonly been divided into five main categories in the ADNI2 phase of \Alz Disease Neuroimaging initiative(ADNI) \citep{weiner2013alzheimer}: Cognitively Normal (CN), Significant Memory Concern(SMC), Early Mild Cognitive Impairment (EMCI), Impairment (LMCI) and \Alz Disease (AD), defined clinically based on behavioral and cognitive assessment. (SMC) are self-report significant memory concern from the patient we choose to exclude it from our study.
 
 There has been a shift with a sense of urgency to find effective intervention in the presymptomatic stage of AD so to reduce the risk of AD, delay or even prevent its onset. To more adequately diagnose different stages of the disease and especially in the early stage and predict future cognitive decline, computer-aided diagnostic classification is increasingly needed using biomarkers based on neuroimaging and other measurements.
 There is evidence that the pathogenic cascade of AD is thought to begin at least 1-2 decades prior to cognitive impairment, starting with accumulation of the amyloid-$\beta$1-42(A$\beta$1-42) plaques \citep{langbaum2013ushering}. Research has suggested that these early processes can be assessed using brain imaging and fluid biomarkers. Prior research work on Fluorodeoxyglucose (FDG) positron emission tomography (PET), Pittsburgh compound B (PIB), structural magnetic resonance imaging (sMRI) and functional measures of resting-state networks (rs-fMRI) has supported their validity as potential metabolic biomarkers. Among various neuroimaging techniques, \FDGPET characterizes the cerebral glucose hypometabolism related to AD and those at risk of AD. It even offers a reliable metabolic biomarker at pre-symptomatic stages. Despite major advances in FDG-PET used to track symptomatic patients, there is still a lack of sensitive, reliable, and accessible imaging algorithms capable of characterizing abnormal degrees of age-related metabolism decline in preclinical individuals at high risk for AD whom early intervention is most needed. Fig.~\ref{fig:pet_raw} shows the different types of PET scans.
@@ -129,9 +132,6 @@ There is evidence that the pathogenic cascade of AD is thought to begin at least
 Recently minor cognitive impairment (MCI) in \FDGPET ~has been classified by a brain regional sensitivity mapping method based on summated index (Total Z score) by utilizing the sensitivity-distribution maps \citep{kakimoto2011new}.In other contemporary works a region of interest (ROI) mask is used to extract features and use incomplete random forest-robust support vector machine to perform classification \citep{lu2017early}. In general for a classification algorithm based on 3D FDG-PET images the feature dimension is usually much larger than the number of subjects. Data with extremely high dimensionality has presented serious challenges to existing learning methods \citep{liu2007computational, friedman2001elements}. With the presence of a large number of features, a learning model tends to overfit, affecting its performance.
 
 In this context, when we apply three-dimensional statistical maps to do classification the feature dimension is usually much larger than the number of subjects, i.e., the so-called “high dimension, small sample size problem”. When a vast number of variables are measured from a small number of subjects, it is often necessary to reduce their high dimension features to low dimension features. In most cases, the information gets lost by mapping into a lower-dimensional space. However, the discarding information is always compensated by a more accurate space (or feature). There are two general approaches to performing dimensionality reduction: feature selection and feature extraction. Feature selection reduces the feature dimension by selecting a subset of original variables \citep{jain1997feature}. It aims to choose a small subset of the relevant features from the original ones according to certain relevance evaluation criterion, which usually leads to better learning performance for example higher learning accuracy for classification, lower computational cost, and better model interoperability \citep{tang2014feature}. Feature extraction reduces the dimension based on mathematical projections, which transform the original features into a lower dimensional but more appropriate feature space \citep{guyon2008feature}. There are some widely used algorithms in machine learning, e.g., principle component analysis (PCA) \citep{jolliffe2002principal}, linear discriminant analysis (LDA) \citep{mika1999fisher}, as analytic tools for feature extraction.
-
-% THIS PARA IS MORE ABOUT MATTER AND NEEDS TO BE ADDED TO THE DISCUSSION
-Both Feature extraction and feature selection are capable of improving learning performance, lowering computational complexity, building better generalizable models, and decreasing required storage. Feature extraction maps the original feature space to a new feature space with lower dimensions by combining the original feature space. It is difficult to link the features from original feature space to new features. Therefore further analysis of new features is problematic since there is no physical meaning for the transformed features obtained from feature extraction techniques. While feature selection selects a subset of features from the original feature set without any transformation, and maintains the physical meanings of the original features. In this sense, feature selection is superior in terms of better readability and interpretability. This property has its significance in many practical applications such as finding relevant genes to a specific disease and building a sentiment lexicon for sentiment analysis. Typically feature selection and feature extraction are presented separately. Via sparse learning such as $\ell1$ regularization, feature extraction (transformation) methods can be converted into feature selection methods \citep{masaeli2010transformation}. In order to analyze images more efficiently, a dictionary that allows us to represent them as a superposition of a small number of its elements so that we can reduce each image to a small number of its coefficients \citep{schnass2008dictionary}. Similarly sparse coding \citep{lin2014stochastic} has been proposed to use a small number of basis vectors (also called dictionary) to represent local features effectively and concisely and help image content recognition. From the input image data, sparse coding learns an over-complete set of basis vectors (dictionary), which have been used to select the most germane features \citep*{friedman2001elements}. To learn local imaging features, image patches are usually selected to form dictionaries. Dictionary learning and sparse coding \citep{mairal2009online} has shown to be efficient for many tasks such as image deblurring \citep{yin2008bregman}, image super-resolution functional connectivity analysis \citep{lv2015holistic,lv2015modeling}, and image classification. In many computer vision, medical imaging and bioinformatics applications \citep{mairal2009online,moody2012unsupervised,lv2015modeling} dictionary learning and sparse coding leads to state-of-the-art results.
 
 The problem of a very large set of feature with respect to sample is called ``the curse of dimensionality'' by many. To address the problem of curse of dimensionality, we propose a patch based method of data collection for PET scans and on top of that we make a layer abstracting from a probablistic machine learning model for classification for a large set of \FDGPET images, and compare its performance. The approach is a empirical machine learning based model which includes patch based feature selection then maxpooling \citep{boureau2010theoretical} for feature agglomeration. We then form data vectors and apply probabilistic principle component analysis for feature extraction using dimension reduction and finally AdaBoost \citep{rojas2009adaboost} for classification. The two systems serves as a comparison between the approaches for analyzing \FDGPET. Our goal is to discover an appropriate \FDGPET ~diagnosis system design by investigating their performance. We tested our hypothesis on the ADNI2 dataset across $668$ subjects. We then carried out 10 fold cross validation in six different classification experiments comparing the two methods across various imaging measures.
 
@@ -145,7 +145,7 @@ The problem of a very large set of feature with respect to sample is called ``th
 \section{Methods and Material}
 
 \subsection{Theoretical Background}
-\label{subsec:theoritical_background}
+\label{sec:theoritical_background}
 
 % THIS PARA IS AGAIN A COMPARISION TO JIE'S PAPER MOVETO DISCUSSION
 In prior work ~\cite{zhang2016applying} the authors study the surface deformation of the hippocampal region of the brain and use it as features for training a dictionary of basis vectors and associated sparse codes. This encoding learn sets of over complete basis vectors which are better able to capture structures and patterns inherent in the input data. The hippocampal surface is modeled from the hippocampal region of the brain and patches on its surface captures topological information effectively. Similar a system can be designed which uses a patch based feature extraction process and then use statistics derives form the patches for classification. However an important question for diagnostic classification based on voxel-based or surface-based maps is which statistics are best to analyze. 
@@ -187,7 +187,7 @@ Notice that the error is measured with respect to the distribution $ D_t $ on wh
 \end{centering}
 
 \subsection{Computational Algorithms}
-\label{subsec:computational_algorithm}
+\label{sec:computational_algorithm}
 
 This section introduces the computational algorithms of the proposed classification method in detail. Specifically, we build an integrated and automated framework to extract and analyze information from three dimensional \FDGPET~ scans, major algorithm is summarized in Alg.~\ref{alg:pipeline} and Fig.~\ref{fig:pipeline}
 
@@ -215,7 +215,7 @@ With respect to three dimensional data one can argue as to which patch orientati
 Illustration of the patch generation procedure is shown in Fig.\ref{fig:patches} (a,b). 
 
 \subsubsection{Feature Selection and Extraction}
-\label{subsec:pipline}
+\label{sec:pipline}
 After we identify the region of interest as the cerebral cortex in the FDG-PET scans we are left with a 80 $ \times $ 95 $ \times $ 80 voxel intensities which represent the metabolic activity. For this study we choose the entire cerebral cortex as the basis for comparison or as we would call it the biomarker. The feature dimension with the FDG-PET data is much larger than the number of subjects and is therefore prone to overfitting. We first randomly generate a number of small 10 $ \times $ 10 $ \times $ 10 windows on each image volume to obtain a collection of small image patches with different amounts of overlap. The procedure is in fact equivalent to applying a high-pass filter to the original volume. As a result, the region of interest (ROI) are still present, but some low frequency signals have disappeared. 
 
 In the pipeline we pool and arranged the patches into a linear array $ X_i = (x^1_i,\dots,x^n_i) $ where $ n $ is the number of feature and $ i \in \{1 \dots m\} $, where $ m $ is the number of samples in a group and stack them for the concerned group $ X = (X_1,\dots,X_i,\dots,X_m) $. The corresponding labels are also generated in this step $ Y = (y_1,\dots,y_m) $. We will then try to find out the linear and non-linear separability of the data using machine learning algorithms.
@@ -241,12 +241,10 @@ each observation variable, unlike PCA which treats covariance and variance simil
 
 Illustration of the PPCA is shown in Fig.\ref{fig:pipeline} (d).
 
-The choice of classifier to process the lower dimension data is AdaBoost, as we saw in Sec.~\ref{subsec:theoritical_background} Adaboost is a good classifier for biomarker research along with Support vector matchine and a few others, we will compare Adaboost with other classifiers and prove that it is stable and robust classifier for biomarker research in the early detection of ~\Alzheimers.
+The choice of classifier to process the lower dimension data is AdaBoost, as we saw in \Sec{theoritical_background}, it is a good classifier for biomarker research along with Support vector machine and a few others, we will compare Adaboost with other classifiers and prove that it is stable and robust classifier for biomarker research in the early detection of \Alz.
 
 \begin{algorithm}
-	\vspace{1em}
 	\caption{Patch Based Feature Extraction \& Dimensionality Reduction Pipeline}\label{alg:pipeline}
-	
 	\KwIn{A number of FDG-PET images}
 	
 	\KwOut{A set of features and labels for the six classification experiment}
@@ -290,8 +288,7 @@ Data used in the preparation of this article were obtained from the Alzheimer\te
 
 The Principal Investigator of this initiative is Michael W. Weiner, MD, VA Medical Center and University of California - San Francisco. ADNI is the result of efforts of many coinvestigators from a broad range of academic institutions and private corporations, and subjects have been recruited from over 50 sites across the U.S. and Canada. The initial goal of ADNI was to recruit 800 subjects but ADNI has been followed by ADNI-GO and ADNI-2. To date, these three protocols have recruited over 1500 adults, ages 55 to 90, to participate in the research, consisting of cognitively normal older individuals, people with early or late MCI, and people with early AD. The follow up duration of each group is specified in the protocols for ADNI-1, ADNI-2 and ADNI-GO. Subjects originally recruited for ADNI-1 and ADNI-GO had the option to be followed in ADNI-2. For up-to-date information, see www.adni-info.org.
 
-In this study, we studied a total of 668 subjects in the ADNI2 baseline dataset, within this population, there were 146 who had \Alzheimers (AD), 158 had impairment (LMCI), 178 had early mild cognitive impairment (EMCI) and 186 were normal control (CN).  
-
+In this study, we studied a total of 668 subjects in the ADNI2 baseline dataset, within this population, there were 146 who had \Alz (AD), 158 had impairment (LMCI), 178 had early mild cognitive impairment (EMCI) and 186 were normal control (CN).  
 
 \begin{table}[t]
 	\begin{center}
@@ -309,14 +306,13 @@ In this study, we studied a total of 668 subjects in the ADNI2 baseline dataset,
 	\end{center}
 \end{table}
 
-
 \section{Experimental Results}
 \label{sec:results}
 We design six experiments (1). AD vs. CU (2). AD vs. EMCI (3). AD vs. LMCI (4). CU vs. EMCI (5). CU vs. LMCI (6). EMCI vs. LMCI. The objective here is to independently study the inter-cohort relationships in hope of learning more about the class separation in AD clinical group.
 
 We run the six experiments over the pipeline described in Algorithm~\ref{alg:pipeline}. An N-fold cross validation protocol was adopted to estimate classification accuracy. All subjects were randomly divided into N folds. The surface biomarkers were selected by training on N-1 folds and the test was performed on the remaining fold. We rotated this procedure for N times to estimate the accuracy. In this paper, we choose N = 10 to complete the classification.The output of each classification experiment was compared to the ground truth, and a contingency table was computed to indicate how many class labels were correctly identified as members of one of the two classes. The rows of the contingency table represent the true classes and the columns represent the assigned classes. The cell at row r and column $c$ is the number of subjects whose true class is r while their assigned class is $c$. Natural performance measures for classification problems mainly based on error rate or accuracy. However, higher accuracy does not necessarily imply better performance on target task. In two-category classification, one method for handling $c$-class problem is to consider $c$ 2-class problems: $ \frac{\omega_i}{not ~\omega_i} $ \citep{fawcett2004roc}. Therefore, confusion matrix was proposed as a method to measure classifier performance. TP, FP, TN, FN represents number of true positives, number of false positives, number of true negatives and number of false negative, respectively. The matrix in Table.~\ref{tab:confusion_matrix} represents a possible combination of ground truth and predicted classification for two classes.
 
-\begin{table}[]
+\begin{table}
 	\centering
 	\begin{tabular}{|P{3.5cm}|P{3.5cm}|P{3.5cm}|}
 		\hline
@@ -403,9 +399,9 @@ It is clear from the Table.~\ref{tab:feature_comp} that the combination of voxel
 \subsection{Comparing Fearure learning algorithms}
 \label{subsection:dim_red}
 We wonder how other dimension reduciton algorithms react to our method, we compare probablistic PCA with frequently used learning methods such as linear Singular Valued Decomposition and non linear Kernel-PCA.
-As indicated in Table.~\ref{tab:comparision_dimension_reduction} the \F~Score of AD vs CU is best when the dimensions are reduced using singular valued decomposition (SVD) with \acc{97} \F~Score. The high Recall and Specificity implies AD vs CU is well classified. Again we believe the \FDGPET~biomarker along with \apoe{2} and \apoe{3} the two alleles of Apolipoprotein E and the Functional Activities Questionnaire (FAQ) are extremely sensitivity if classifying between \Alzheimers and Normal Control. 
+As indicated in Table.~\ref{tab:comparision_dimension_reduction} the \F~Score of AD vs CU is best when the dimensions are reduced using singular valued decomposition (SVD) with \acc{97} \F~Score. The high Recall and Specificity implies AD vs CU is well classified. Again we believe the \FDGPET~biomarker along with \apoe{2} and \apoe{3} the two alleles of Apolipoprotein E and the Functional Activities Questionnaire (FAQ) are extremely sensitivity if classifying between \Alz and Normal Control. 
 Column two in Table.\ref{tab:comparision_dimension_reduction} shows that the subjects in AD vs EMCI are separable to a good extent with \F~Score of \acc{83.3} in case of Principle Component Analysis (PCA) and a Recall of \acc{84.5} and Specificity of \acc{85.7} shows that both the classes have been evenly separated. 
-Kernel PCA \citep{mika1998kernel} performed the best in remaining experiments. With CU vs LMCI the group separation is of one i.e. the disease progression there is one stage in between CU and LMCI and we observe in column 5 of Table.~\ref{tab:comparision_dimension_reduction} the \F~Score is \acc{80}. With AD vs LMCI and CU s EMCI with Kernel PCA the \F~Score is \acc{76.65} and \acc{71.46} respectively. The last experiment (LMCI vs EMCI) \F~Score of \acc{60.3} is the most difficult to classify many good and popular classifiers failed to classify the complex nature of early Mild impairment (EMCI) and impairment (LMCI). EMCI and LMCI as described in Section~\ref{subjects} are derived from the Mild Cognitive Impairment (MCI) stage in ADNI1 and the participants reported a subjective memory concern the difference in EMCI and LMCI is decided by the Wechsler Memory Scale Logical (WMS). We believe there is no clear separation with \FDGPET~ as our biomarker and maybe more specific ROI may lead us to a more concrete conclusion. 
+Kernel PCA \citep{mika1998kernel} performed the best in remaining experiments. With CU vs LMCI the group separation is of one i.e. the disease progression there is one stage in between CU and LMCI and we observe in column 5 of Table.~\ref{tab:comparision_dimension_reduction} the \F~Score is \acc{80}. With AD vs LMCI and CU s EMCI with Kernel PCA the \F~Score is \acc{76.65} and \acc{71.46} respectively. The last experiment (LMCI vs EMCI) \F~Score of \acc{60.3} is the most difficult to classify many good and popular classifiers failed to classify the complex nature of early Mild impairment (EMCI) and impairment (LMCI). EMCI and LMCI are derived from the Mild Cognitive Impairment (MCI) stage in ADNI1 and the participants reported a subjective memory concern the difference in EMCI and LMCI is decided by the Wechsler Memory Scale Logical (WMS). We believe there is no clear separation with \FDGPET as our biomarker and maybe more specific ROI may lead us to a more concrete conclusion. 
 
 \begin{table}[]
 	\centering
@@ -441,7 +437,7 @@ Kernel PCA \citep{mika1998kernel} performed the best in remaining experiments. W
 
 \subsection{Comparing Classifiers}
 \label{subsection:classifier_comp}
-To demonstrate the effectiveness of AdaBoost as a good classifier for biomarker related research in \Alzheimers classification we compare nine classifiers and report the best four as illustrated in Table.~\ref{tab:comparision_classifiers}. The \F~Score of AD vs CU is best for Gaussian Process (GP) with a $ 97.3 \% $ \F~Score compared to $ 96.2 \% $ in AdaBoost. $ 98.38 \% $ PPV and $ 95.20 \% $ NPV indicates both the classes have been effectively classified. The class separation is maximum in case of AD vs CU in reference to disease progression that explains the high \F measure. For AD vs EMCI, AD vs LMCI, CU vs EMCI and CU vs LMCI the \F Score is highest case of Gaussian Process. In case of CU vs LMCI AdaBoost performs comparatively poor in comparison to other classifiers. For EMCI vs LMCI the NPV is poor for GP and Linear SVM which means one class is poorly classifier and the classification accuracy is inconsistent. In this case AdaBoost performed good as it gave a more consistent NPV and PPV the recall and sensitivity is also the best in this experiment. For further comparison between dimensionality reduction we keep our classifier as AdaBoost because of a more correct classification when AdaBoost was used as classifier across all the experiments.
+To demonstrate the effectiveness of AdaBoost as a good classifier for biomarker related research in \Alz classification we compare nine classifiers and report the best four as illustrated in Table.~\ref{tab:comparision_classifiers}. The \F~Score of AD vs CU is best for Gaussian Process (GP) with a $ 97.3 \% $ \F~Score compared to $ 96.2 \% $ in AdaBoost. $ 98.38 \% $ PPV and $ 95.20 \% $ NPV indicates both the classes have been effectively classified. The class separation is maximum in case of AD vs CU in reference to disease progression that explains the high \F measure. For AD vs EMCI, AD vs LMCI, CU vs EMCI and CU vs LMCI the \F Score is highest case of Gaussian Process. In case of CU vs LMCI AdaBoost performs comparatively poor in comparison to other classifiers. For EMCI vs LMCI the NPV is poor for GP and Linear SVM which means one class is poorly classifier and the classification accuracy is inconsistent. In this case AdaBoost performed good as it gave a more consistent NPV and PPV the recall and sensitivity is also the best in this experiment. For further comparison between dimensionality reduction we keep our classifier as AdaBoost because of a more correct classification when AdaBoost was used as classifier across all the experiments.
 \clearpage
 
 \begin{table}[!h]
@@ -518,26 +514,27 @@ This experiment further investigates what if some other feature learning method 
 
 Area under the Curve is used to measure receiver operating characteristic (ROC) curve. The area is a measure of the predictive power of the classification experiment to classify a  randomly chosen positive example more accurately than a randomly chosen negative example. ROC is the graphical plot between the true positive rate and the false positive rate, it was first used during World War 2 for detecting enemy objects from friendly ships and noise. Know as Signal detection theory, it measures the ability of radar receiver operators to identify enemy ships.
 
-Fig.~\ref{fig:auc} illustrates the classification in all clinical groups with different features performance comparison with receiver operating characteristic (ROC) curves and area under curve (AUC) measures. The results for Patch based Feature Extraction (PFE) and Patch based Feature Extraction (PFE)  with other demographic features are computed with the proposed pipeline in Alg.\ref{alg:pipeline}, patch based Dictionary Learning (PDL) is applied to dataset before training as described in Alg Alg.\ref{alg:piplinecompare}. Within the four statistics, the result of using Feature Extraction with Voxles, APOE and FAQ are better than others. Among all AUC measures, PFE+Demo feature achieved the best performance (AUC = 0.99).
+Fig.~\ref{fig:auc} illustrates the classification in all clinical groups with different features performance comparison with receiver operating characteristic (ROC) curves and area under curve (AUC) measures. The results for Patch based Feature Extraction (PFE) and Patch based Feature Extraction (PFE)  with other demographic features are computed with the proposed pipeline in Algorithm \ref{alg:pipeline}, patch based Dictionary Learning (PDL) is applied to dataset before training as described in \ref{sec:app:SCC} and \Sec{dictionary_learning}. Within the four statistics, the result of using Feature Extraction with Voxles, APOE and FAQ are better than others. Among all AUC measures, PFE+Demo feature achieved the best performance (AUC = 0.99).
 	
 In this comparison we plot the AUC and compare both of our methods with and without demographics. The graphs show the superior accuracy of including rich features over only the regional voxel intensities. 
 \clearpage
-\begin{figure}[!h]
+\begin{figure}
 	\centering
 	\includegraphics[width=0.9\linewidth]{figures/auc.png}
 	\caption{ROC comparing all clinical groups}
 	\label{fig:auc}
 \end{figure}
 
-
-
 \section{Discussion}
-In this paper, we propose a new imaging prediciton system called patch based feature extraction for Alzheimer's disease diagnosis via FDG-PET analysis (PFE) for the early prediction of cognitive imparemet and diagnose AD and its various stages in progesssion (EMCI and LMCI). Deriving motivation from some prior work in surface morphmetry statistics  \citep{zhang2016applyiong,zhang2016hyperbolic}  we selected a series of different extent overlapped patches and applied max-pooling. For dimension redction, we selected a series of algorithms and performed meta analysis to determine the best performing one. We base our classifier as AdaBoost as it has proven to be a excellent choice for biomedical research  \citep{?.?}. The result on 663 baseline subjects from ADNI show that our PFE framework performed better than some other standard image measures. Our study has two main findings. First, the combined statistics for each subject, consting of APOE gene information, FAQ scores and other demographic features carries rich information on distributed metabolic activity, which measures volumetric deformation and are also applicable for prediction and classification research. The newly combined statistics practically encodes a great deal of information that would be otherwise overlooked, volumetric based computer-aided diagnostic research is more powerful by analysing these rich features. Second, we try to demonstrate the feasibility of learning algorithms in image based predicion and classification research. SCC is an efficient sparse coding algorithm and its superior computational efficiency helps us to account for biological differences and achieve deep learning.~\cite{gregor2010learning} pointed out that sparse coding is a special case of sparse encoder method  \citep{vincent2010stacked,baldi2012autoencoders}. These deep architectures have shown to lead to state-of-the-art results on a number of challenging classification and regression problem. We find out the the encoding of features involving volumetric data is large thus costly to impliment and there is no significant performance improvment in the training.  
+In this paper, we propose a new imaging prediction system called patch based feature extraction for \Alz disease diagnosis via \FDGPET analysis (PFE) for the early prediction of cognitive impairment and diagnose AD and its various stages in progression (EMCI and LMCI). Deriving motivation from some prior work in surface morphometry statistics  \citep{zhang2016applying,zhang2016hyperbolic}  we selected a series of different extent overlapped patches and applied max-pooling. For dimension reduction, we selected a series of algorithms and performed meta analysis to determine the best performing one. We base our classifier as AdaBoost as it has proven to be a excellent choice for biomedical research  \citep{?.?}. The result on 663 baseline subjects from ADNI show that our PFE framework performed better than some other standard image measures. Our study has two main findings. First, the combined statistics for each subject, consisting of APOE gene information, FAQ scores and other demographic features carries rich information on distributed metabolic activity, which measures volumetric deformation and are also applicable for prediction and classification research. The newly combined statistics practically encodes a great deal of information that would be otherwise overlooked, volumetric based computer-aided diagnostic research is more powerful by analyzing these rich features. Second, we try to demonstrate the feasibility of learning algorithms in image based prediction and classification research. SCC is an efficient sparse coding algorithm and its superior computational efficiency helps us to account for biological differences and achieve deep learning. \citep{gregor2010learning} pointed out that sparse coding is a special case of sparse encoder method \citep{vincent2010stacked,baldi2012autoencoders}. These deep architectures have shown to lead to state-of-the-art results on a number of challenging classification and regression problem. We find out the the encoding of features involving volumetric data is large thus costly to implement and there is no significant performance improvement in the training.  
+
+% THIS PARA IS MORE ABOUT MATTER AND NEEDS TO BE ADDED TO THE DISCUSSION
+Both Feature extraction and feature selection are capable of improving learning performance, lowering computational complexity, building better generalizable models, and decreasing required storage. Feature extraction maps the original feature space to a new feature space with lower dimensions by combining the original feature space. It is difficult to link the features from original feature space to new features. Therefore further analysis of new features is problematic since there is no physical meaning for the transformed features obtained from feature extraction techniques. While feature selection selects a subset of features from the original feature set without any transformation, and maintains the physical meanings of the original features. In this sense, feature selection is superior in terms of better readability and interpretability. This property has its significance in many practical applications such as finding relevant genes to a specific disease and building a sentiment lexicon for sentiment analysis. Typically feature selection and feature extraction are presented separately. Via sparse learning such as $\ell1$ regularization, feature extraction (transformation) methods can be converted into feature selection methods \citep{masaeli2010transformation}. In order to analyze images more efficiently, a dictionary that allows us to represent them as a superposition of a small number of its elements so that we can reduce each image to a small number of its coefficients \citep{schnass2008dictionary}. Similarly sparse coding \citep{lin2014stochastic} has been proposed to use a small number of basis vectors (also called dictionary) to represent local features effectively and concisely and help image content recognition. From the input image data, sparse coding learns an over-complete set of basis vectors (dictionary), which have been used to select the most germane features \citep*{friedman2001elements}. To learn local imaging features, image patches are usually selected to form dictionaries. Dictionary learning and sparse coding \citep{mairal2009online} has shown to be efficient for many tasks such as image deblurring \citep{yin2008bregman}, image super-resolution functional connectivity analysis \citep{lv2015holistic,lv2015modeling}, and image classification. In many computer vision, medical imaging and bioinformatics applications \citep{mairal2009online,moody2012unsupervised,lv2015modeling} dictionary learning and sparse coding leads to state-of-the-art results.
 
 \subsection{Methods for ADNI classification using PET subsectioncans}
-The development of automatic methods for the accurate classification of patients into clinical groups from imaging data has been the aim of a number of ADNI studies. Thus PET classification plays an important role in medical image retrieval, which is a part of decision making in medical image analysis. ADNI 2 PET data is new compared to ADNI 1 and has two different modalities for traditional MCI i.e. EMCI and LMCI which are the early and late stages in imparement.
+The development of automatic methods for the accurate classification of patients into clinical groups from imaging data has been the aim of a number of ADNI studies. Thus PET classification plays an important role in medical image retrieval, which is a part of decision making in medical image analysis. ADNI 2 PET data is new compared to ADNI 1 and has two different modalities for traditional MCI i.e. EMCI and LMCI which are the early and late stages in impairment.
 
-For 3D PET scans ``Z-score'' images are used to represent the active parts of the brain it will show all pixels with values below the lower threshold in blue, and pixels above the upper threshold in red \citep{ishii2014pet}. PET scans have also been analyzed by utilizing adjusted $T$ statistics and an automated voxel-based procedure \citep{herholz2002discrimination} and Machine Learning algorithms to address the high dimensionality of the statistical maps \citep{illan201118} \citep{higdon2004comparison}. Recently minor cognitive impairment (MCI) in \FDGPET ~has been classified by a brain regional sensitivity mapping method based on summated index (Total Z score) by utilizing the sensitivity-distribution maps \citep{kakimoto2011new}. In other contemporary works a region of interest (ROI) mask is used to extract features and use incomplete random forest-robust support vector machine to perform classification \citep{lu2017early}. In previous work within our lab MRI images were classified using surface measures of ventricular enlargement and sparse coding then applied on the 2D-patch features \citep*{zhang2016hyperbolic,zhang2016applying} with $ 96.7 \% $ accuracy. These images were functional MRIs and the features were a combination of surface statistics, we build our idea on a similar model we fist design a empirical machine learning based model. Using three dimensional patches (i.e., small sub volumes of the image defined as three-dimensional [3D] cubes) we extract information. A very similar 3D patch based feature selection is described in \citep{coupe2011patch}, In  this work, voxels  with  similar  surrounding  neighborhoods  are  considered  to  belong  to  the  same  structure and thus are used to estimate the final label. Our data is also along the same lines. 
+For 3D PET scans ``Z-score'' images are used to represent the active parts of the brain it will show all pixels with values below the lower threshold in blue, and pixels above the upper threshold in red \citep{ishii2014pet}. PET scans have also been analyzed by utilizing adjusted $T$ statistics and an automated voxel-based procedure \citep{herholz2002discrimination} and Machine Learning algorithms to address the high dimensionality of the statistical maps \citep{illan201118,higdon2004comparison}. Recently minor cognitive impairment (MCI) in \FDGPET ~has been classified by a brain regional sensitivity mapping method based on summated index (Total Z score) by utilizing the sensitivity-distribution maps \citep{kakimoto2011new}. In other contemporary works a region of interest (ROI) mask is used to extract features and use incomplete random forest-robust support vector machine to perform classification \citep{lu2017early}. In previous work within our lab MRI images were classified using surface measures of ventricular enlargement and sparse coding then applied on the 2D-patch features \citep*{zhang2016hyperbolic,zhang2016applying} with $ 96.7 \% $ accuracy. These images were functional MRIs and the features were a combination of surface statistics, we build our idea on a similar model we fist design a empirical machine learning based model. Using three dimensional patches (i.e., small sub volumes of the image defined as three-dimensional cubes) we extract information. A very similar 3D patch based feature selection is described in \citep{coupe2011patch}, In  this work, voxels  with  similar  surrounding  neighborhoods  are  considered  to  belong  to  the  same  structure and thus are used to estimate the final label. Our data is also along the same lines. 
 
 \subsubsection{Finding Dictionary and Sparse Codes}
 \label{sec:dictionary_learning}
@@ -547,53 +544,53 @@ Given a data set $\mathbf{X} = (x_1 \dots x_n)$ of image patches, each image pat
 
 \begin{figure}
 	\centering
-	\includegraphics[width=\linewidth]{figures/iteration}
+	\includegraphics[width=0.6\linewidth]{figures/iteration}
 	\caption[One Iteration of SCC]{Figure shows one iteration of the sparse coding algorithm. (a).Take an image patch $x_i$. (b). Perform few steps of coordinate descent to find the support (non zero entries) of the sparse code. (c). Update the support of the dictionary by second order stochastic gradient descent to obtain a new dictionary.}
 	\label{fig:iteration}
 \end{figure}
 
 As illustrated in Fig.~\ref{fig:iteration} shows the input $ x_i $ and the sparse vector $ z^k_i $ where i is the sample number and k is the iteration.
 
-
-\begin{algorithm}
-	\vspace{1em}
-	\caption{Patch Based Stochastic Coordinate Coding}
-	\label{alg:pipeline1}
+%  ALGORITHM USED FOR SCC REMOVED FROM THIS DRAFT UNBALANCED INFORMATION
+% \begin{algorithm}
+% 	\vspace{1em}
+% 	\caption{Patch Based Stochastic Coordinate Coding}
+% 	\label{alg:pipeline1}
 	
-	\KwIn{A number of FDG-PET images}
+% 	\KwIn{A number of FDG-PET images}
 	
-	\KwOut{A set of features and labels for the six classification experiment}
+% 	\KwOut{A set of features and labels for the six classification experiment}
 	
-	The segmented dataset is divided and segregated into 6 binary parcels
+% 	The segmented dataset is divided and segregated into 6 binary parcels
 	
-	\For{exp $ \gets $ \{ [AD vs. CU], [AD vs. EMCI], [AD vs. LMCI], [CU vs. EMCI], [CU vs. LMCI], [EMCI vs. LMCI]. \}} {
+% 	\For{exp $ \gets $ \{ [AD vs. CU], [AD vs. EMCI], [AD vs. LMCI], [CU vs. EMCI], [CU vs. LMCI], [EMCI vs. LMCI]. \}} {
 		
-		m $ \gets $ number of samples
+% 		m $ \gets $ number of samples
 		
-		n $ \gets $ number of patches
+% 		n $ \gets $ number of patches
 		
-		p $ \gets $ patch dimension
+% 		p $ \gets $ patch dimension
 		
-		Initialize X = [m*n $ \times $ p]
-		\For{samples $ \in $ exp}{
-			A three dimensional patch of 10 $ \times $ 10 $ \times $ 10 is created in order to extract meaning full information from the 3D segmented PET scans.   
+% 		Initialize X = [m*n $ \times $ p]
+% 		\For{samples $ \in $ exp}{
+% 			A three dimensional patch of 10 $ \times $ 10 $ \times $ 10 is created in order to extract meaning full information from the 3D segmented PET scans.   
 		
-	    	A number of random patches are generated over the volume and random meaningful patches are selected from the ROI to initialize the dictionary. 
+% 	    	A number of random patches are generated over the volume and random meaningful patches are selected from the ROI to initialize the dictionary. 
 	
-			\For{patch $ \in $ patches}{
-				 downsample ``patch'' \& linearly rearranged $ X_{patch} = (x_1,\dots,x_p)$ where $ patch \in p$.
+% 			\For{patch $ \in $ patches}{
+% 				 downsample ``patch'' \& linearly rearranged $ X_{patch} = (x_1,\dots,x_p)$ where $ patch \in p$.
 			
-				A matrix of all patches is arranged. i.e., X[sample*patch, : ] = [ $X_{patch}$']
-			}
-	}
+% 				A matrix of all patches is arranged. i.e., X[sample*patch, : ] = [ $X_{patch}$']
+% 			}
+% 	}
 
-	$ X $ is then fed into the stochastic coordinate coding module. (Fig. \ref{fig:pipeline1}(c)).
+% 	$ X $ is then fed into the stochastic coordinate coding module. (Fig. \ref{fig:pipeline1}(c)).
 	
-	We apply max-pooling algorithm on the learned 2000-dimension dictionary to aggregate discriminant features (Fig. \ref{fig:pipelinecompare}(d)).
+% 	We apply max-pooling algorithm on the learned 2000-dimension dictionary to aggregate discriminant features (Fig. \ref{fig:pipelinecompare}(d)).
 	
-	Ada-Boost is used to classify the six binary classification experiments. 
-	}
-\end{algorithm}
+% 	Ada-Boost is used to classify the six binary classification experiments. 
+% 	}
+% \end{algorithm}
 
 
 %\subsection{Selecting the best patch size}
@@ -602,7 +599,7 @@ As illustrated in Fig.~\ref{fig:iteration} shows the input $ x_i $ and the spars
 In this paper, we present a frameworks that combines three dimensional voxel statistics with machine learning to deal with high dimensional features before classification. We also used dictionary learning and sparse coding to study the effectiveness of leature learning algorithm with respect to the original framework. We applied AdaBoost to classify different AD stages. Our comprehensive experiments showed the effectiveness of patch based methods in three dimensional Positron Emission Tomography (PET). We obtained $ ~96 \% $ classification with voxel + demographic statistics.
 Our proposed PFE method performs well in experiments with high group separation. With experiments having low group separation both the algorithms struggled. This indicates that there is significant metabolic change in AD vs. CU but in other stages the metabolic change may be unpredictable to some extent. 
 
-We hope our work sheds light on the utilization of PET images as biomarker information in classifying Non-AD classes with a greater accuracy. It also invokes the use of varied multiple features in the diagnosis of Alzheimer's via some clinical group classification. In the future, we plan to apply our systems to other cortical and sub-cortical regions in the brain, more specifically to design a better ROI based feature selection method so as to identify regions in the cortex and sub-cortex responsible for cognitive decline.
+We hope our work sheds light on the utilization of PET images as biomarker information in classifying Non-AD classes with a greater accuracy. It also invokes the use of varied multiple features in the diagnosis of \Alz via some clinical group classification. In the future, we plan to apply our systems to other cortical and sub-cortical regions in the brain, more specifically to design a better ROI based feature selection method so as to identify regions in the cortex and sub-cortex responsible for cognitive decline.
 
 \begin{center}
 {\large Acknowledgements}
@@ -610,12 +607,12 @@ We hope our work sheds light on the utilization of PET images as biomarker infor
 
 This work was partially supported by the National Institutes of Health (R21AG043760 to JS, WZ, RJC and YW, R21AG049216 to WZ and YW, RF1AG051710 and U54EB020403 to YW, R01AG031581 and P30AG19610 to RJC) and the National Science Foundation (DMS-1413417 to YW, IIS-1421165 to WZ and YW).
 
-Data collection and sharing for this project was funded by the Alzheimer\textquoteright s Disease Neuroimaging Initiative (ADNI) (National Institutes of Health Grant U01 AG024904) and DOD ADNI (Department of Defense award number W81XWH-12-2-0012). ADNI is funded by the National Institute on Aging, the National Institute of Biomedical Imaging and Bioengineering, and through generous contributions from the following: Alzheimer's Association; Alzheimer\textquoteright s Drug Discovery Foundation; BioClinica, Inc.; Biogen Idec Inc.; Bristol-Myers Squibb Company; Eisai Inc.; Elan Pharmaceuticals, Inc.; Eli Lilly and Company; F. Hoffmann-La Roche Ltd and its affiliated company Genentech, Inc.; GE Healthcare; Innogenetics, N.V.; IXICO Ltd.; Janssen Alzheimer Immunotherapy Research \& Development, LLC.; Johnson \& Johnson Pharmaceutical Research \& Development LLC.; Medpace, Inc.; Merck \& Co., Inc.; Meso Scale Diagnostics, LLC.; NeuroRx Research; Novartis Pharmaceuticals Corporation; Pfizer Inc.; Piramal Imaging; Servier; Synarc Inc.; and Takeda Pharmaceutical Company. The Canadian Institutes of Health Research is providing funds to Rev December 5, 2013
+Data collection and sharing for this project was funded by the Alzheimer\textquoteright s Disease Neuroimaging Initiative (ADNI) (National Institutes of Health Grant U01 AG024904) and DOD ADNI (Department of Defense award number W81XWH-12-2-0012). ADNI is funded by the National Institute on Aging, the National Institute of Biomedical Imaging and Bioengineering, and through generous contributions from the following: \Alz Association; Alzheimer\textquoteright s Drug Discovery Foundation; BioClinica, Inc.; Biogen Idec Inc.; Bristol-Myers Squibb Company; Eisai Inc.; Elan Pharmaceuticals, Inc.; Eli Lilly and Company; F. Hoffmann-La Roche Ltd and its affiliated company Genentech, Inc.; GE Healthcare; Innogenetics, N.V.; IXICO Ltd.; Janssen Alzheimer Immunotherapy Research \& Development, LLC.; Johnson \& Johnson Pharmaceutical Research \& Development LLC.; Medpace, Inc.; Merck \& Co., Inc.; Meso Scale Diagnostics, LLC.; NeuroRx Research; Novartis Pharmaceuticals Corporation; Pfizer Inc.; Piramal Imaging; Servier; Synarc Inc.; and Takeda Pharmaceutical Company. The Canadian Institutes of Health Research is providing funds to Rev December 5, 2013
 support ADNI clinical sites in Canada. Private sector contributions are facilitated by the Foundation for the National Institutes of Health (www.fnih.org). The grantee organization is the Northern California Institute for Research and Education, and the study is coordinated by the Alzheimer\textquoteright s Disease Cooperative Study at the University of California, San Diego. ADNI data are disseminated by the Laboratory for Neuro Imaging at the University of Southern California.
 
 \appendix
 \subsection{\textbf{Stochastic Coordinate Coding}}
-\label{app:SCC}
+\label{sec:app:SCC}
 The following section describes Stochastic Coordinate Coding (SCC) algorithm \citep{lin2014stochastic}. The dictionary is initialized via any initialization method and denoted as $ D_1^1 $. The sparse codes are initialized as $ z_i^0 = 0 $ for $ i=1,\dots,n $. Where $ i $ is the index of data points and the superscript denotes the number of epoch. The algorithm is describes as follows:\\
 (1). Get an image patch $ x_i $.\\
 (2). Update $ z_i^k $ via one or a few steps of coordinate descent: 
